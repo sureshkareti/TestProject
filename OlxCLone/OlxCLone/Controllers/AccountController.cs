@@ -13,5 +13,10 @@ namespace OlxCLone.Controllers
         {
             return View();
         }
+
+        public ActionResult Login1()
+        {
+            return View();
+        }
     }
 }
