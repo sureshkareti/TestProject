@@ -6,15 +6,10 @@ using System.Web.Mvc;
 
 namespace OlxCLone.Controllers
 {
-    public class AccountController : Controller
+    public class PostingController : Controller
     {
-        // GET: Account
-        public ActionResult Login()
-        {
-            return View();
-        }
-
-        public ActionResult Register()
+        // GET: Posting
+        public ActionResult FreeAdd()
         {
             return View();
         }
