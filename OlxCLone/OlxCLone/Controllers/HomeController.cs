@@ -12,6 +12,7 @@ namespace OlxCLone.Controllers
         public ActionResult Index()
         {
             return View();
+
         }
     }
 }
