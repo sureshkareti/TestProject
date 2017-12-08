@@ -8,7 +8,7 @@ namespace OlxCLone.Controllers
 {
     public class PostingController : Controller
     {
-        // GET: Posting
+        // GET: Posting        
         public ActionResult FreeAdd()
         {
             return View();
