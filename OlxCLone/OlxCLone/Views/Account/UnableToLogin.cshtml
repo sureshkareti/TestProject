@@ -2,28 +2,33 @@
 @{
     Layout = null;
 }
-
 <!DOCTYPE html>
+<html xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>New account</title>
+    <title>New password</title>
     <meta name="robots" content="noindex, follow" />
     
     <meta http-equiv="Content-Language" content="en" />
     <meta name="description" content="" />
-    <meta property="og:title" content="New account" />
+    <meta property="og:title" content="New password" />
     <link rel="icon" type="image/x-icon" href="~/images/logo.jpg">
     <link rel="stylesheet" type="text/css" href="~/Content/custome/sw855e31d1e1b381c686e47e953699523f.css">
     @*<link rel="stylesheet" type="text/css" href="https://s2.olx.in/static/olxin/packed/sw855e31d1e1b381c686e47e953699523f.css">*@
-   
+    
 </head>
 <body class="accountview">
-
-    <div id="innerLayout">
+       <div id="innerLayout">
 
         <header id="header-container">
             <div class="navi">
                 <div class="wrapper clr rel bigwrapper">
+                    @*<a href="https://www.olx.in" id="headerLogo" class="abs icon website big" title="Free classifieds in India, Classified ads in India, Online Classified Advertising">Free classifieds in India, Classified ads in India, Online Classified Advertising</a>
+                    <a href="https://www.olx.in/newolx/" class="icon prevpagelanding"></a>
+
+                    <a id="postNewAdLink" class="postnewlink fbold tdnone" href="https://www.olx.in/posting/">
+                        <span>Submit a Free Ad</span>
+                    </a>*@
                     <a href="/Account/Login">
                         <img border="0" alt="W3Schools" src="~/images/logo.jpg" width="100" height="100">
                     </a>
@@ -72,117 +77,63 @@
                     <div class="clr pding10_0"></div>
                 </div>
             </div>
-        </header>
-            <section id="body-container">
+        </header>    <section id="body-container">
             <div class="wrapper">
-                <div class="content clr rel">
+                <div class="content clr rel ">
                     <div class="stuffed">
-                        <h2 class="large fbold c62 marginbott10">Register</h2>
-                        <div class="halfgrid bre3 br4 access accessbox">
-                            <form class="default access type2" action="" id="mainForm" method="post">
-                                <fieldset>
-                                    <legend></legend>
-                                    <div class="clr">
-                                        <div class="fleft half">
-                                            <div class="inner">
-
-                                                <div class="fblock clr" id="emailDiv">
-                                                    <div class="label fleft c000 fbold tright">
-                                                        <label for="userEmail">Phone<em class="cc914">*</em></label>
-                                                    </div>
-                                                    <div class="area clr">
-                                                        <div class="fleft rel focusbox smallshadow">
-                                                            <input type="text" maxlength="10" value="" class="light br3 hide-dropdown" id="userEmail" name="register[phone]">
-                                                            <span class="status icon vmiddle inlblk dnone"></span>
-                                                            <p class="desc errorboxContainer">
-                                                                <small>Enter your phone no</small>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="fblock clr" id="pass1Div">
-                                                    <div class="label fleft c000 fbold tright">
-                                                        <label for="userPass">Password<em class="cc914">*</em></label>
-                                                    </div>
-                                                    <div class="area clr">
-                                                        <div class="fleft rel focusbox smallshadow">
-                                                            <input type="password" autocomplete="off" value="" class="light br3" id="userPass" name="register[password]">
-                                                            <span class="status icon vmiddle inlblk dnone"></span>
-                                                            <p class="desc errorboxContainer">
-                                                                <small> Enter your password</small>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="fblock clr" id="user-name">
-                                                    <div class="label fleft c000 fbold tright">
-                                                        <label for="userPass-repeat">Name<em class="cc914">*</em> </label>
-                                                    </div>
-                                                    <div class="area clr">
-                                                        <div class="fleft rel focusbox smallshadow">
-                                                            <input type="text" value="" class="light br3" id="userPass-repeat" name="register[person]">
-                                                            <span class="status icon vmiddle inlblk dnone"></span>
-                                                            <p class="desc errorboxContainer">
-                                                                <small id="se_userPass-repeatErr">Enter Name</small>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="fleft half">
-                                            <div class="inner bre3 brtop0 brbottom0 brright0">
-                                                <p>By registering, you get access to <strong>My Account</strong> where you can:</p>
-                                                <ul class="c62 points">
-                                                    <li>
-                                                        <span class="icon inlblk point vmiddle"><span></span></span>Manage your Ads (Edit, Delete, Upgrade)
-                                                    </li>
-                                                    <li>
-                                                        <span class="icon inlblk point vmiddle"><span></span></span>Check responses to your Ads
-                                                    </li>
-                                                    <li>
-                                                        <span class="icon inlblk point vmiddle"><span></span></span>Track payments
-                                                    </li>
-                                                    <li>
-                                                        <span class="icon inlblk point vmiddle"><span></span></span>Manage your settings
+                        <div class="accessgrid br4">
+                            <h2 class="large fbold c62 marginbott10">Reset Your Account Password</h2>
+                            <div class="accessbox bre3 br4 rel">
+                                <div class="inner">
+                                    <form class="default access change-password type3 margintop30 pdingbott30" action="" id="mainForm" method="post">
+                                        <fieldset class="rel">
+                                            <div style="display: none" class="suggest errorbox-container abs zi2 br3">
+                                                <span class="target abs icon"></span>
+                                                <ul class="suggest">
+                                                    <li class="rel margin5_0">
+                                                        <span class="abs icon info3"></span>
                                                     </li>
                                                 </ul>
+                                                <p style="display: none" class="error "></p>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="inner">
-                                        <div class="fblock margintop20 clr">
-                                            <div class="label fleft c000 fbold tright"></div>
-                                            <div class="area">
-                                                <div class="rel focusbox smallshadow">
+
+
+                                            <div class="fblock clr">
+                                                <div class="label fleft c000 fbold tright">
+                                                    <label for="userEmail">Email or Phone <em class="cc914">*</em></label>
+                                                </div>
+                                                <div class="area clr">
+                                                    <div class="focusbox fleft rel smallshadow">
+                                                        <div class="clr">
+                                                            <input type="text" value="" class="light bgf4 br3" id="userEmail" name="register[email_phone]">
+                                                            <span class="status icon vmiddle inlblk dnone"></span>
+                                                        </div>
+                                                        <p class="desc errorboxContainer">
+                                                            <small>Enter your email or phone </small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fblock">
+                                                <div class="label fleft c000 fbold tright"></div>
+                                                <div class="area clr">
                                                     <p>
-                                                        <input type="checkbox" id="acceptCheck" name="register[rules]" checked= checked><strong class="cc914">*</strong>
-                                                        <label for="acceptCheck" class="thin">
-                                                            By registering on OLX, you accept our <a href="https://www.olx.in/terms/" title="Terms of Use" target="_blank">Terms of Use</a>.
-                                                        </label>
+                                                        <span class="button br3 large big"><input type="submit" class="cfff" value="Submit" id="se_userSignIn"></span>
                                                     </p>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="fblock">
-                                            <div class="label fleft c000 fbold tright"></div>
-                                            <div class="area clr margintop15">
-                                                <p>
-                                                    <span class="button big br3 large"><input type="submit" class="cfff" value="Register" id="se_userSignIn"></span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                            </form>
+                                        </fieldset>
+                                        <input type="hidden" name="register[rules]" value=1 />
+                                    </form>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <footer id="footer-container">
             <div class="wrapper small bigwrapper" id="lastwrapper">
                 <div class="margintop15 clr rel">
@@ -198,6 +149,12 @@
 
                             <div class="static box fleft">
                                 <ul class="small lheight16">
+
+                                    <!-- <li class="block">
+                                        <a id="footerLinkMobileApps" class="link gray" title="Mobile Apps" href="https://www.olx.in/mobileapps/">
+                                            <span>Mobile Apps</span>
+                                        </a>
+                                    </li> -->
                                     <li class="block">
                                         <a href="https://www.olx.in/sitemap/regions/" class="link gray" title="Locations Map">
                                             <span>Locations Map</span>
@@ -345,12 +302,12 @@
             </div>
         </div>
 
-    </div>
-    
-
+    </div>        
     <script type="text/javascript" src="https://s2.olx.in/static/olxin/packed/sw46e8349b7014fbe6d1893b42962e37d3.js"></script>
-    <script type="text/javascript" src="https://s2.olx.in/static/olxin/packed/sw6d7bdf006062b9e94f7f2bda735c2a87.js"></script>
+    <script type="text/javascript" src="https://s1.olx.in/static/olxin/packed/sw512f6d8b6c1941357de4c07a2ed822f4.js"></script>
+  
 
 </body>
 </html>
+<!-- wrk-28 -->
 

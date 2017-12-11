@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <!--<link href="Content/bootstrap-theme.css" rel="stylesheet" />-->
+
+    <script src="scripts/jquery-3.2.1.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <style type="text/css">
+        .navbar-brand {
+            /*padding: 15px;*/
+            padding: 0;
+            margin: 0;
+        }
+
+            .navbar-brand > img {
+                /*height: 100%;
+                padding: 15px;
+                width: auto;*/
+                width: 80px;
+                height: 80px;
+            }
+
+        #page-header2-img > img {
+            height: 50px;
+            padding: 2px 0 0 15px;
+            width: auto;
+            display: none;
+        }
+
+        .icon {
+            height: 32px;
+            width: 32px;
+            background: url('images/testLogo.png') no-repeat 0 0;
+        }
+
+        .iconMinimal {
+            height: 92px;
+            width: 92px;
+            background: url('images/testLogo.png') no-repeat 0 0;
+        }
+
+        .navbar-brand > a {
+            padding: 7px 15px;
+        }
+
+        #page-header2 {
+            height: 40px;
+            margin: 30px 0 0 100px;
+            padding: 0;
+        }
+
+        @media(max-width:768px) {
+            #page-wraper {
+                position: inherit;
+                margin-left: 250px;
+                padding: 30px 30px 0 30px;
+                border-left: 1px solid #e7e7e7;
+            }
+
+            #page-header1 {
+                display: none;
+                padding: 0;
+            }
+
+            #page-header2 {
+                height: 0;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+
+            #page-header-wraper {
+                padding: 0;
+            }
+
+            #page-header2-img > img {
+                height: 50px;
+                padding: 2px 0 0 15px;
+                width: auto;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="container" style="background-color:white;max-width:970px !important;padding-top:0;margin-top:0px;border:1px solid gray">
+
+            <nav class="navbar navbar-default" style="background-color:white;border:none">
+
+                <div class="container-fluid" id="page-header-wraper">
+                    <a class="navbar-brand" href="http://disputebills.com" id="page-header1">
+                        <img src="images/testLogo.png" />
+                        <!--<img src="https://res.cloudinary.com/candidbusiness/image/upload/v1455406304/dispute-bills-chicago.png" alt="Dispute Bills">-->
+                    </a>
+                    <nav class="navbar navbar-default" id="page-header2" style="background-color:white;border:none">
+                        <div class="navbar-header">
+
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="http://disputebills.com" id="page-header2-img">
+                                <img src="images/testLogo.png" />
+                                <!--<img src="https://res.cloudinary.com/candidbusiness/image/upload/v1455406304/dispute-bills-chicago.png" alt="Dispute Bills">-->
+                            </a>
+
+                        </div>
+
+                        <div id="navbar2" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li class="dropdown-header">Nav header</li>
+                                        <li><a href="#">Separated link</a></li>
+                                        <li><a href="#">One more separated link</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <!--/.nav-collapse -->
+                </div>
+                <!--/.container-fluid -->
+            </nav>
+        </div>
+        <div class="container" style="border:1px solid red;">
+           
+            <div class="row">
+                <div class="col-md-3">
+                    <input class="form-control" type="text" id="lg">
+                </div>
+                <div class="col-md-7">
+                    <input class="form-control" type="text" id="lg">
+                </div>
+                <div class="col-md-2">
+                    <input class="form-control" type="text" id="lg">
+                </div>
+            </div>
+
+           
+        </div>
+       
+    </div>
+
+    <div class="container">
+        <h2>Input Sizing</h2>
+        <p>You can quickly size labels and form controls within a Horizontal form by adding .form-group-lg or .form-group-sm to the div class="form-group" element:</p>
+        <form class="form-horizontal">
+            <div class="form-group form-group-lg">
+                <label class="col-sm-2 control-label" for="lg">form-group-lg</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" id="lg">
+                </div>
+            </div>
+            <div class="form-group form-group-sm">
+                <label class="col-sm-2 control-label" for="sm">form-group-sm</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" id="sm">
+                </div>
+            </div>
+        </form>
+    </div>
+   
+
+</body>
+</html>

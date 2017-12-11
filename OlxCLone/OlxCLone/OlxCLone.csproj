@@ -130,7 +130,10 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="HtmlPage2.html" />
+    <Content Include="HtmlPage3.html" />
     <Content Include="images\logo.jpg" />
+    <Content Include="images\testLogo.png" />
     <Content Include="resources.html" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
@@ -171,6 +174,7 @@
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Posting\FreeAdd.cshtml" />
+    <Content Include="Views\Account\UnableToLogin.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
