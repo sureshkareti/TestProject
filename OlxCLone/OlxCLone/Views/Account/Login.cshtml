@@ -5,320 +5,158 @@
 
 
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Advanture App</title>
-    <meta name="robots" content="noindex, follow" />    
-    <meta http-equiv="Content-Language" content="en" />
-    <meta name="description" content="" />
-    <meta property="og:title" content="Advanture App" />
-    <meta property="fb:app_id" content="320949351409311" />
-   
-    <link rel="icon" type="image/x-icon" href="~/images/logo.jpg">
-    <link rel="stylesheet" type="text/css" href="~/Content/custome/sw855e31d1e1b381c686e47e953699523f.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page </title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="~/scripts/jquery-3.2.1.min.js"></script>
+    <script src="~/scripts/bootstrap.min.js"></script>
+    <style type="text/css">
+    </style>
+
 </head>
-<body class="accountview">
+<body>
+    <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/Account/Login">
+                    <img border="0" alt="W3Schools" src="~/images/logo.jpg" width="35" height="35">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/Account/Login">My Account</a></li>
+                    <li><a href="/Posting/FreeAdd">Free Ad</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div></div><br /><div></div><br /><div></div><br /><div></div><br /><div></div><br /><div></div><br />
+    <div class="row col-sm-12">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+            <h4 class="text-on-pannel text-primary"><strong class="text-uppercase"> Login </strong></h4>
+        </div>
+        <div class="col-sm-4">
+        </div>
+    </div>
+    <div class="container">
 
-    <div id="innerLayout">
-
-        <header id="header-container">
-            <div class="navi">
-                <div class="wrapper clr rel bigwrapper">
-                    <a href="/Account/Login">
-                        <img border="0" alt="W3Schools" src="~/images/logo.jpg" width="100" height="100">
-                    </a>
-                    
-                    <a id="postNewAdLink" class="postnewlink fbold tdnone" href="/Posting/FreeAdd">
-                        <span>Submit a Free Ad</span>
-                    </a>
-                    <div class="lang-selector small">
-                        <span class="marginright5">Select language</span>
-                        <ul class="breaklist inlblk">
-                            <li class="inlblk">
-                                <span class="x-normal">English</span>
-                            </li>
-                            <li class="inlblk">
-                                <a class="x-normal" id="changeLang" href="https://www.olx.in/changelang/?lang=hi" data-baselink="https://www.olx.in/changelang/?lang=hi">हिंदी</a>
-                            </li>
-                        </ul>
+        <div class="panel panel-primary">
+            <div class="panel-body">
+                <div class="row col-sm-12" hidden>
+                    <div class="col-sm-4">
                     </div>
-                    <span class="slogan">India's Largest Marketplace</span>
-                    <ul class="userbox fright marginleft10">
-                        <li class="hidden inlblk nowrap rel vtop" id="observed-counter">
-                            <a href="https://www.olx.in/observed/" class="tdnone inlblk hidden" id="observed-ads-link" title="Favorites">
-                                <span class="icon inlblk favin vtop"></span>
-                                <strong class="counter"></strong>
-                            </a>
-                            <a href="https://www.olx.in/observed/search/" class="tdnone inlblk hasObservedAds?'hidden':''}" id="observed-search-link" title="Favorites">
-                                <span class="icon inlblk favin vtop"></span>
-                                <strong class="counter"></strong>
-                            </a>
-                        </li>
-                        <li class="inlblk nowrap vtop noslash" id="my-account-link">
-                            <div class="inlblk rel">
-                                <a href="/Account/Login"
-                                   class="tdnone" id="topLoginLink">
-                                    <span class="icon inlblk accountshape vtop fleft"></span>
-                                    <span class="link inlblk acc-user-name fleft"><strong>My Account</strong></span>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div id="searchbox">
-                <div class="wrapper">
-                    <div class="clr pding10_0"></div>
-                </div>
-            </div>
-        </header>  
-          <section id="body-container">
-            <div class="wrapper">
-                <div class="content clr rel">
-                    <div class="stuffed">
-                        <div class="accessgrid ">
+                    <div class="form-group col-sm-6" hidden>
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-9">
+                            <label for="usr"><b>Email or Phone</b></label>
+                            <input type="text" class="form-control col-sm-4" id="usr">
+                            <div class="row"></div>
+                            <div class="row"><p></p></div>
 
-                            <h2 class="large fbold c62 marginbott10">Log in</h2>
-                            <div class="accessbox bre3 br4 rel">
-                                <div class="inner">
-                                    <form class="default access login margintop15" action="" method="post" id="loginForm">
-                                        <fieldset class="rel">
-                                            <div class="fblock clr rel">
-                                                <div class="label fleft c000 fbold tright">
-                                                    <label for="userEmail">Email or Phone</label>
-                                                </div>
-                                                <div class="area clr">
-                                                    <div class="fleft rel focusbox">
-                                                        <input type="text" value="" class="text x-normal light br4 required" id="userEmail" name="login[email_phone]">
-                                                        <span class="status icon vmiddle inlblk dnone"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="fblock clr rel ">
-                                                <div class="label fleft c000 fbold tright">
-                                                    <label for="userPass">Password</label>
-                                                </div>
-                                                <div class="area clr">
-                                                    <div class="fleft rel focusbox">
-                                                        <input type="password" autocomplete="off" value="" class="text x-normal light br4 required" id="userPass" name="login[password]">
-                                                        <span class="status icon vmiddle inlblk dnone"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="fblock clr">
-                                                <div class="label fleft c000 fbold marginright10"></div>
-                                                <div class="area margin10_0">
-                                                    <input name="login[remember-me]" type="checkbox" id="user-remember" class="checkbox marginleft10" checked="checked">
-                                                    <label class="marginleft10 lheight20" for="user-remember">Remember me</label>
-                                                </div>
-                                            </div>
-                                            <div class="fblock clr tcenter margintop7">
-                                                <div class="label fleft c000 fbold"></div>
-                                                <div class="area with-button">
-                                                    <p class="bgf3 br5 box clr">
-                                                        <span class="button big cfff br3 default x-large">
-                                                            <input type="submit" class="cfff" value="Log in" id="se_userLogin">
-                                                        </span>
-                                                    </p>
-                                                    <p class="fleft">
-                                                        <small>
-                                                            <a id="newpassword" class="link" href="/Account/UnableToLogin">
-                                                                <span>Unable to Login?</span>
-                                                            </a>
-                                                            @*<a id="newpassword" class="link" href="https://www.olx.in/account/password/">
-                                                                <span>Unable to Login?</span>
-                                                            </a>*@
-                                                        </small>
-                                                    </p>
-                                                    <p class="fright">
-                                                        <small>
-                                                            <a class="register-link link" id="register-desktop" href="/Account/Register">
-                                                                <span>Register</span>
-                                                            </a>
-                                                            @*<a class="register-link link" id="register-desktop" href="https://www.olx.in/account/register/">
-                                                                <span>Register</span>
-                                                            </a>*@
-                                                        </small>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </fieldset>
-
-                                    </form>
-                                </div>
-
-                                <div class="bottominfobar tcenter">
-                                    <a href="#otploginDiv" id="otploginshow" class="link">
-                                        <span>Login with phone & OTP</span>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="accessbox br4 rel tcenter accessbox-alternative">
-                                <table width="100%" cellpadding="0" cellspacing="0" class="types fixed tcenter">
-                                    <tr>
-
-
-                                        <td valign="top">
-                                            <div class="space">
-                                                <div class="fb x-small margin10_0">
-                                                    <a href="https://www.olx.in/account/facebooklogin/?ref%5B0%5D%5Baction%5D=myaccount&ref%5B0%5D%5Bmethod%5D=index&ref%5B1%5D%5Bparams%5D%5Bref%5D%5B0%5D%5Baction%5D=myaccount&ref%5B1%5D%5Bparams%5D%5Bref%5D%5B0%5D%5Bmethod%5D=index&ref%5B1%5D%5Baction%5D=account&ref%5B1%5D%5Bmethod%5D=index" id="fb-login-desktop" class="button normal sec br3 facebook-button">
-                                                        <span class="icon block facebook fleft"></span>
-                                                        <span class="signin-text">Sign in using Facebook</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </td>
-
-
-                                        <td valign="top">
-                                            <div class="space">
-                                                <div class="x-small margin10_0">
-                                                    <a href="https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=856918512908-tvkneuio593kjfpsgebi8o7t5c25rp05.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.olx.in%2Faccount%2Fgooglelogin%2F&scope=email&state=" id="gp-login-desktop" class="button normal br3 gplus">
-                                                        <span class="gplus-icon icon"></span>
-                                                        <span class="gplus-text">Sign in with Google</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </td>
-
-                                    </tr>
-                                </table>
-                            </div>
-                            <p class="tcenter marginbott50 color-4">
-                                By logging in, you accept our <a href="https://www.olx.in/terms/" class="link" target="_blank"><span>Terms of Use</span></a>
-                            </p>
+                            <label for="usr"><b>Password</b></label>
+                            <input type="text" class="form-control col-sm-4" id="usr">
+                            <div class="row"></div>
+                            <div class="row"><p></p></div>
 
                         </div>
                     </div>
+                    <div class="col-sm-2">
+                    </div>
                 </div>
-            </div>
-        </section>
-        <div id="otploginDiv" class="hidden" style="background: #f1f1f1; width: 400px;">
-            <form novalidate="novalidate" class="default sendmail2">
-                <div class="inner tcenter">
-                    <div class="pding20_10 large lheight18">
-                        <fieldset class="tleft">
-                            <div class="fblock clr" style="float: left; margin-left: 0px;">
-                                <div class="fleft label t1right" style="width: 130px;">
-                                    <label class="normal fbold" style="font-size: 18px;">
-                                        Phone number<strong class="req cc914">*</strong>
-                                    </label>
-                                </div>
-                                <div style="margin-left:140px" class="area clr">
-                                    <div class="focusbox smallshadow fleft1">
-                                        <input type="text" class="text x-normal light br4" name="phone" id="phoneNumber" maxlength="10" style="font-size: 18px; width:190px">
-                                        <span class="status icon vmiddle inlblk dnone down"></span>
+
+                <form>
+                    <div class="form-group col-sm-12">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4">
+                            <label for="inputEmail">Email or Phone</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email or Phone">
+                        </div>
+                        <div class="col-sm-4"></div>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4">
+                            <label for="inputPassword">Password</label>
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                        </div>
+                        <div class="col-sm-4"></div>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <label><input type="checkbox"> Remember me</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4"></div>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4">
+                            <div class="col-sm-4"></div>
+                            <div class="col-sm-4">
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-1"></div>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4">
+                            <hr />                  
+                                <a href="/Account/UnableToLogin">Unable to Login?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="/Account/UnableToLogin">Register</a>
+                        </div>
+                        <div class="col-sm-4"></div>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <hr />
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4">  
+                            <div class="col-sm-3"></div> 
+                            <div class="col-sm-8">
+                                <a href="#myModal" data-toggle="modal">Login with phone & OTP</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4"></div>
+                            <div id="myModal" class="modal fade">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title">Confirmation</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Do you want to save changes you made to document before closing?</p>
+                                            <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </fieldset>
                     </div>
-                </div>
-                <div class="tcenter brtop-1 clr pding10">
-                    <p class="margin15_0">
-                        <span class="button big3 br3 circleshadow large"><input type="submit" class="cfff" value="Get OTP"></span>
-                    </p>
-                </div>
-            </form>
-        </div>
-        <div id="noAccountDiv" class="hidden">
-            <form class="default sendmail2">
-                <div class="inner tcenter">
-                    <div class="large lheight18">
-                        <p class="pding5_10">
-                            Please provide the e-mail address or the phone number used in the Ad. We will send you a link in e-mail/sms that will allow you to access your account and manage your Ads.
-                        </p>
-                        <fieldset class="tleft">
-                            <div class="fblock clr">
-                                <div class="fleft label tright">
-                                    <label class="normal fbold">
-                                        Email or phone from the Ad								<strong class="req cc914">*</strong>
-                                    </label>
-                                </div>
-                                <div class="area clr">
-                                    <div class="focusbox smallshadow fleft">
-                                        <input type="text" class="text x-normal light br4" name="email_phone" id="accountEmail" placeholder="xyz@example.com or 9876543210">
-                                        <span class="status icon vmiddle inlblk dnone down"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </div>
-                </div>
-                <div class="tcenter brtop-1 clr pding10">
-                    <p class="margin15_0">
-                        <span class="button big3 br3 circleshadow large"><input type="submit" class="cfff" value="Send"></span>
-                    </p>
-                </div>
-            </form>
-        </div>
-
-        <div id="message_system" style="display: none">
-            <div class="inner">
-                <div class="tleft x-normal lheight20 rel messagesystem ">
-                    <p>
-                        <span class="fleft icon status">&nbsp;</span>
-                        <span class="msg block overh"></span>
-                    </p>
-                </div>
+                </form>
             </div>
         </div>
-        <div id="dialogMessage" class="hidden">
-            <div class="inner"></div>
-        </div>
-        <div id="saveFavDiv" class="hidden">
-            <div class="inner tcenter">
-                <div class="large lheight18">
-                    <p class="marginbott15 margintop10 typeSearch hidden">
-                        <strong>Search was added to favorites</strong>
-                    </p>
-                    <p class="marginbott15 margintop10 typeOffer hidden">
-                        <strong>The Ad has been added to your favorites</strong>
-                    </p>
-                    <p class="margin5_0">Log in to save it in your My OLX account</p>
-                    <p class="margintop25 marginbott25">
-                        <a class="button big3 br3 circleshadow" href="https://www.olx.in/account/?origin=observepopup">
-                            <span class="cfff large">Log in</span>
-                        </a>
-                    </p>
-                    <p class="margin5_0">
-                        Or <a href="https://www.olx.in/account/register/" class="link">
-                            <span>Create an account to save your favorites</span>
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <div class="tcenter brtop-1 clr pding10">
-                <p class="margin20_0 large lheight18">
-                    <a href="#" class="link" onclick="$.fancybox.close(); return false;">
-                        <span>No, thanks</span>
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div id="synchroFavDiv" class="hidden">
-            <div class="inner"></div>
-            <div class="tcenter brtop-1 clr pding10">
-                <p class="margin10_0">
-                    <a class="button big br3" href="#" id="synchronizeObservedConfirm">
-                        <span class="cfff large">Save in favorites</span>
-                    </a>
-                </p>
-                <p class="margin5_0">
-                    <a href="#" class="link" id="synchronizeObservedCancel">
-                        <span>No, thanks</span>
-                    </a>
-                </p>
-            </div>
-        </div>
-
-    </div>  
-
-    <script type="text/javascript" src="https://s2.olx.in/static/olxin/packed/sw46e8349b7014fbe6d1893b42962e37d3.js"></script>
-    <script type="text/javascript" src="https://s1.olx.in/static/olxin/packed/sw1fee01e1452564dc37f1e187f48c942e.js"></script>
-   
-
+    </div>
 </body>
 </html>
 

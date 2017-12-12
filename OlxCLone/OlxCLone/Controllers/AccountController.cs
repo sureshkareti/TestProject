@@ -23,5 +23,13 @@ namespace OlxCLone.Controllers
         {
             return View();
         }
+        public ActionResult Test()
+        {
+            return View();
+        }
+        public ActionResult Design()
+        {
+            return View();
+        }
     }
 }
