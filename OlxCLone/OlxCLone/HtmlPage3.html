@@ -12,26 +12,94 @@
 
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+
+    <style type="text/css">
+        .navbar-brand {
+            line-height: 82px;
+            height: 82px;
+            padding: 0;
+        }
+
+            .navbar-brand img {
+                height: 100%;
+                width: 80px;
+                padding: 0;
+                margin: 0;
+            }
+
+        .logo-title {
+            top: 40px;
+            position: absolute;
+            font-size: 20px;
+            font-weight: normal;
+            line-height: 20px;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        }
+
+        #navbar2{
+            padding-top:20px;
+        }
+
+        @media(max-width:768px) {
+            .logo-title {
+                top: 23px;
+                position: absolute;
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 20px;
+                font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            }
+
+            .navbar-brand {
+                line-height: 50px;
+                height: 50px;
+                padding: 0;
+            }
+
+                .navbar-brand img {
+                    height: 100%;
+                    width: 50px;
+                  
+                }
+        }
+    </style>
 </head>
 <body>
 
-    <div class="container">
-        <h2>Input Sizing</h2>
-        <p>You can quickly size labels and form controls within a Horizontal form by adding .form-group-lg or .form-group-sm to the div class="form-group" element:</p>
-        <form class="form-horizontal">
-            <div class="form-group form-group-lg">
-                <label class="col-sm-2 control-label" for="lg">form-group-lg</label>
-                <div class="col-sm-10">
-                    <input class="form-control" type="text" id="lg">
+    <div class="container" style="max-width:970px !important;">
+
+        <nav class="navbar navbar-default" >
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2" aria-controls="navbar2" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="#" >
+                        <img src="images/testLogo.png" />
+
+
+                    </a>
+                    <span class="logo-title">india's largest market place</span>
+                </div>
+                <div id="navbar2" class="navbar-collapse collapse">
+                    <!--<ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Page 1</a></li>
+                        <li><a href="#">Page 2</a></li>
+                    </ul>-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li style="border:1px solid gray"><a href="#" style="color:#2965be"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+                        <li style="border:1px solid gray"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="form-group form-group-sm">
-                <label class="col-sm-2 control-label" for="sm">form-group-sm</label>
-                <div class="col-sm-10">
-                    <input class="form-control" type="text" id="sm">
-                </div>
-            </div>
-        </form>
+        </nav>
+
+
     </div>
 
 </body>
