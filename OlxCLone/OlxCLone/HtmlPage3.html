@@ -14,6 +14,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 
     <style type="text/css">
+        body {
+            /*font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+            font-family: "Roboto",Arial,Helvetica,sans-serif;
+        }
+
         .navbar-brand {
             line-height: 82px;
             height: 82px;
@@ -36,10 +41,19 @@
             font-family: 'Roboto', Arial, Helvetica, sans-serif;
         }
 
-        #navbar2{
-            padding-top:20px;
+        #navbar2 {
+            padding-top: 20px;
         }
 
+         .nav-freead {
+           
+            color: white;
+            background-color: #ff7700;
+            font-weight:bold;
+        }
+        #navbar2 ul li a{
+            line-height:12px;
+        }
         @media(max-width:768px) {
             .logo-title {
                 top: 23px;
@@ -59,16 +73,21 @@
                 .navbar-brand img {
                     height: 100%;
                     width: 50px;
-                  
                 }
+
+                 #navbar2 {
+            padding-top: 0px;
         }
+        }
+
+       
     </style>
 </head>
 <body>
 
     <div class="container" style="max-width:970px !important;">
 
-        <nav class="navbar navbar-default" >
+        <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2" aria-controls="navbar2" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,10 +97,8 @@
                         <span class="icon-bar"></span>
                     </button>
 
-                    <a class="navbar-brand" href="#" >
+                    <a class="navbar-brand" href="#">
                         <img src="images/testLogo.png" />
-
-
                     </a>
                     <span class="logo-title">india's largest market place</span>
                 </div>
@@ -91,10 +108,14 @@
                         <li><a href="#">Page 1</a></li>
                         <li><a href="#">Page 2</a></li>
                     </ul>-->
+                   
                     <ul class="nav navbar-nav navbar-right">
-                        <li style="border:1px solid gray"><a href="#" style="color:#2965be"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
-                        <li style="border:1px solid gray"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <li ><a href="#" style="color:#2965be;font-weight:bold"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+                        <!--<li ><a href="#" style=""><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+                        <li ><input type="button" class="btn  navbar-btn nav-freead " value="Submit a Free Ad"/></li>                       
                     </ul>
+                  
+                    
                 </div>
             </div>
         </nav>
