@@ -15,7 +15,53 @@
 
     <script src="~/scripts/jquery-3.2.1.min.js"></script>
     <script src="~/scripts/bootstrap.min.js"></script>
+    @*<link href="~/Content/font-awesome.css" rel="stylesheet" />*@
+    @*<link href="~/Content/font-awesome.min.css" rel="stylesheet" />*@
+    @*<link href="~/Content/font-awesome.min.css" rel="stylesheet" />*@
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style type="text/css">
+        /*html {
+            margin: 0px auto;
+            text-align: center;
+        }*/
+
+        .btn-facebook {
+            background: #3B5998;
+            border-radius: 0;
+            color: #fff;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #263961;
+        }
+
+            .btn-facebook:link, .btn-facebook:visited {
+                color: #fff;
+            }
+
+            .btn-facebook:active, .btn-facebook:hover {
+                background: #263961;
+                color: #fff;
+            }
+
+
+
+        .btn-googleplus {
+            background: #E93F2E;
+            border-radius: 0;
+            color: #fff;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #b72213;
+        }
+
+            .btn-googleplus:link, .btn-googleplus:visited {
+                color: #fff;
+            }
+
+            .btn-googleplus:active, .btn-googleplus:hover {
+                background: #b72213;
+                color: #fff;
+            }
     </style>
 
 </head>
@@ -43,19 +89,20 @@
             </div>
         </div>
     </nav>
-    <div></div><br /><div></div><br /><div></div><br /><div></div><br /><div></div><br /><div></div><br />
-    <div class="row col-sm-12">
-        <div class="col-sm-4">
-        </div>
-        <div class="col-sm-4">
-            <h4 class="text-on-pannel text-primary"><strong class="text-uppercase"> Login </strong></h4>
-        </div>
-        <div class="col-sm-4">
-        </div>
-    </div>
-    <div class="container">
-
-        <div class="panel panel-primary">
+    <div></div><br /><div></div><br /><div></div><br /><div></div><br /><div></div><br />
+    @*<div class="row col-sm-12">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+                <h4 class="text-on-pannel text-primary"><strong class="text-uppercase"> Login </strong></h4>
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>*@
+    <div>
+        @*<div class="container">*@
+        <div class="panel">
+            @*<div class="panel panel-primary">*@
             <div class="panel-body">
                 <div class="row col-sm-12" hidden>
                     <div class="col-sm-4">
@@ -79,84 +126,91 @@
                     </div>
                 </div>
 
-                <form>
-                    <div class="form-group col-sm-12">
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-4">
-                            <label for="inputEmail">Email or Phone</label>
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Email or Phone">
-                        </div>
-                        <div class="col-sm-4"></div>
-                    </div>
-                    <div class="form-group col-sm-12">
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-4">
-                            <label for="inputPassword">Password</label>
-                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                        </div>
-                        <div class="col-sm-4"></div>
-                    </div>
-                    <div class="form-group col-sm-12">
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-4">
-                            <div class="checkbox">
-                                <label><input type="checkbox"> Remember me</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-4"></div>
-                    </div>
-                    <div class="form-group col-sm-12">
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-4">
-                            <div class="col-sm-4"></div>
-                            <div class="col-sm-4">
-                                <button type="submit" class="btn btn-primary">Login</button>
-                            </div>
-                        </div>
-                        <div class="col-sm-1"></div>
-                    </div>
-                    <div class="form-group col-sm-12">
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-4">
-                            <hr />                  
-                                <a href="/Account/UnableToLogin">Unable to Login?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <a href="/Account/UnableToLogin">Register</a>
-                        </div>
-                        <div class="col-sm-4"></div>
-                    </div>
-                    <div class="form-group col-sm-12">
-                        <hr />
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-4">  
-                            <div class="col-sm-3"></div> 
-                            <div class="col-sm-8">
-                                <a href="#myModal" data-toggle="modal">Login with phone & OTP</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-4"></div>
-                            <div id="myModal" class="modal fade">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                            <h4 class="modal-title">Confirmation</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>Do you want to save changes you made to document before closing?</p>
-                                            <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                </form>
+              
             </div>
         </div>
     </div>
+    <form>
+        <div class="form-group col-sm-12">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <label for="inputEmail">Email or Phone</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email or Phone">
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+        <div class="form-group col-sm-12">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <label for="inputPassword">Password</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+        <div class="form-group col-sm-12">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div class="checkbox">
+                    <label><input type="checkbox" checked> Remember me</label>
+                </div>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+        <div class="form-group col-sm-12">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+                <br /><hr />
+                <a href="/Account/UnableToLogin">Unable to Login?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="/Account/UnableToLogin">Register</a>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <div class="form-group col-sm-12">
+            <hr />
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-8">
+                    <a href="#myModal" data-toggle="modal">Login with phone & OTP</a>
+                </div>
+            </div>
+            <div class="col-sm-4"></div>
+            <div id="myModal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Confirmation</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Do you want to save changes you made to document before closing?</p>
+                            <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group col-sm-12">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-4">
+                <a href="#" title="Facebook" class="btn btn-facebook btn-sm"><i class="fa fa-facebook fa-fw"></i> Sign in using Facebook</a>
+            </div>
+            <div class="col-sm-1">
+                <div class="col-sm-4">
+                    <a href="#" title="Google+" class="btn btn-googleplus btn-sm"><i class="fa fa-google-plus fa-fw"></i> Sing in with Google</a>
+                </div>
+            </div>
+        </div>
+
+
+    </form>
 </body>
 </html>
-

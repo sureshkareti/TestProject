@@ -128,6 +128,8 @@
     <Content Include="Content\custome\CustomStyles.css" />
     <Content Include="Content\custome\sw6637089ba18177292250e396ff324034.css" />
     <Content Include="Content\custome\sw855e31d1e1b381c686e47e953699523f.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
