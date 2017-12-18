@@ -3,38 +3,60 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <title>@ViewBag.Title - olxclone</title>
+
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    @RenderSection("Styles", false)
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    <div class="container" style="max-width:970px !important;">
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2" aria-controls="navbar2" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="#">
+                        <img src="~/images/testLogo.png" />
+                    </a>
+                    <span class="logo-title">india's largest market place</span>
+                </div>
+                <div id="navbar2" class="navbar-collapse collapse">
+                    <!--<ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Page 1</a></li>
+                        <li><a href="#">Page 2</a></li>
+                    </ul>-->
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" style="color:#2965be;font-weight:bold;font-size:18px"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+                        <!--<li ><a href="#" style=""><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+                        <li><input type="button" class="btn  navbar-btn nav-freead " style="font-size:16px" value="Submit a Free Ad" /></li>
+                    </ul>
+
+
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                </ul>
-            </div>
-        </div>
+        </nav>
+
+
     </div>
 
-    <div class="container body-content">
+    <div class="container body-content" style="max-width:970px !important;">
         @RenderBody()
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
+    <script src="~/scripts/jquery-3.2.1.js"></script>
+    <script src="~/scripts/bootstrap.js"></script>
 
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
 </body>
 </html>
