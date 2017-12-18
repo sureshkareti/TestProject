@@ -2,311 +2,75 @@
 @{
     Layout = null;
 }
+
+
 <!DOCTYPE html>
-<html xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>New password</title>
-    <meta name="robots" content="noindex, follow" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page </title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 
-    <meta http-equiv="Content-Language" content="en" />
-    <meta name="description" content="" />
-    <meta property="og:title" content="New password" />
-    <link rel="icon" type="image/x-icon" href="~/images/logo.jpg">
-    @*<link rel="stylesheet" type="text/css" href="~/Content/custome/sw855e31d1e1b381c686e47e953699523f.css">*@
-    @*<link rel="stylesheet" type="text/css" href="https://s2.olx.in/static/olxin/packed/sw855e31d1e1b381c686e47e953699523f.css">*@
-    <style type="text/css">
-        #innerLayout {
-            min-width: 960px;
-        }
-        .offersview #innerLayout {
-                overflow: hidden;
-        }        
-#header-container .nav {
-    min-height: 36px;
-}
-
-#header-container .homelink {
-    margin-top: 8px;
-    margin-left: 10px;
-}
-
-#header-container .slogan {
-    top: 50px;
-    left: 108px;
-    position: absolute;
-    font-size: 20px;
-    font-weight: normal;
-    line-height: 20px;
-}
-
-#header-container .navi .lang-selector {
-    color: #787878;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    line-height: 16px;
-    background: #f7f8f9;
-    padding: 7px 12px;
-    -webkit-border-radius: 0px 0px 5px 5px;
-    border-radius: 0px 0px 5px 5px;
-}
-
-#header-container .navi .userbox {
-    font-size: 17px;
-    font-weight: normal;
-    line-height: 15px;
-    margin-top: 46px;
-    margin-bottom: 15px;
-    padding: 6px 20px 8px;
-}
-
-    #header-container .navi .userbox > li {
-        margin-left: 20px;
-    }
-
-    #header-container .navi .userbox .counter {
-        position: absolute;
-        left: 100%;
-        top: -9px;
-        font-weight: normal;
-        color: #2965be;
-    }
-
-#header-container .navi .postnewlink {
-    position: relative;
-    font-size: 17px;
-    font-weight: normal;
-    line-height: 15px;
-    float: right;
-    margin-top: 37px;
-    margin-bottom: 15px;
-    padding: 13px 21px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    background: #ff7700;
-    color: #fff;
-    font-weight: bold;
-}
-
-    #header-container .navi .postnewlink:hover {
-        background: #ffa454;
-    }
-
-#header-container .navi .icon.accountshape {
-    margin: 0px 10px -2px 0px;
-}
-
-#header-container .breaklist .userbox-dd .link {
-    color: #C9D8EF;
-}
-
-#header-container .breaklist .notifycircle {
-    top: -2px;
-    margin-right: -9px;
-}
-
-#header-container .icon.website.big {
-    left: 0px;
-    top: 1px;
-    z-index: 10;
-    overflow: visible;
-}
-
-#header-container .icon.prevpagelanding {
-    display: none;
-}
-
-#header-container #observed-counter .suggesttitlebottom {
-    width: 290px;
-    right: 0px;
-    left: auto;
-    white-space: normal;
-    margin-top: 12px;
-}
-
-#header-container.businesstop .navi .breaklist {
-    background: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    padding: 8px 28px;
-}
-
-#header-container.businesstop .navi .breaklist, #header-container.businesstop .button.big {
-    margin: 26px 0px 30px;
-}
-
-    #header-container.businesstop .button.big, #header-container.businesstop .button.big > * {
-        font-size: 12px;
-        height: 32px;
-        line-height: 32px !important;
-    }
-
-#header-container.businesstop #topLoginLink strong {
-    font-weight: normal;
-}
-
-#header-container.businesstop .breaklist .link {
-    text-decoration: none;
-}
-
-#header-container.businesstop .breaklist .userbox-dd .link {
-    text-decoration: underline;
-}
-
-#header-container.businesstop .flexline {
-    table-layout: fixed;
-}
-
-    #header-container.businesstop .flexline > * {
-        vertical-align: middle;
-        height: 90px;
-    }
-
-    #header-container.businesstop .flexline > .logotype {
-        width: 90px;
-        padding-right: 20px;
-    }
-
-        #header-container.businesstop .flexline > .logotype img {
-            max-width: 90px;
-            max-height: 90px;
-        }
-
-#header-container.businesstop .sitecolor {
-    color: #AC0901;
-}
-
-
-
-
-
-    </style>
+    <script src="~/scripts/jquery-3.2.1.min.js"></script>
+    <script src="~/scripts/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 </head>
-@*<body class="accountview">*@
 <body>
-    <div id="innerLayout">
-
-        <header id="header-container">
-            <div class="navi">
-                <div class="wrapper clr rel bigwrapper">
-                    @*<a href="https://www.olx.in" id="headerLogo" class="abs icon website big" title="Free classifieds in India, Classified ads in India, Online Classified Advertising">Free classifieds in India, Classified ads in India, Online Classified Advertising</a>
-                        <a href="https://www.olx.in/newolx/" class="icon prevpagelanding"></a>
-
-                        <a id="postNewAdLink" class="postnewlink fbold tdnone" href="https://www.olx.in/posting/">
-                            <span>Submit a Free Ad</span>
-                        </a>*@
-                    <a href="/Account/Login">
-                        <img border="0" alt="W3Schools" src="~/images/logo.jpg" width="100" height="100">
-                    </a>
-
-                    <a id="postNewAdLink" class="postnewlink fbold tdnone" href="/Posting/FreeAdd">
-                        <span>Submit a Free Ad</span>
-                    </a>
-                    <div class="lang-selector small">
-                        <span class="marginright5">Select language</span>
-                        <ul class="breaklist inlblk">
-                            <li class="inlblk">
-                                <span class="x-normal">English</span>
-                            </li>
-                            <li class="inlblk">
-                                <a class="x-normal" id="changeLang" href="https://www.olx.in/changelang/?lang=hi" data-baselink="https://www.olx.in/changelang/?lang=hi">हिंदी</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <span class="slogan">India's Largest Marketplace</span>
-
-                    <ul class="userbox fright marginleft10">
-                        <li class="hidden inlblk nowrap rel vtop" id="observed-counter">
-                            <a href="https://www.olx.in/observed/" class="tdnone inlblk hidden" id="observed-ads-link" title="Favorites">
-                                <span class="icon inlblk favin vtop"></span>
-                                <strong class="counter"></strong>
-                            </a>
-                            <a href="https://www.olx.in/observed/search/" class="tdnone inlblk hasObservedAds?'hidden':''}" id="observed-search-link" title="Favorites">
-                                <span class="icon inlblk favin vtop"></span>
-                                <strong class="counter"></strong>
-                            </a>
-                        </li>
-                        <li class="inlblk nowrap vtop noslash" id="my-account-link">
-                            <div class="inlblk rel">
-                                <a href="/Account/Login"
-                                   class="tdnone" id="topLoginLink">
-                                    <span class="icon inlblk accountshape vtop fleft"></span>
-                                    <span class="link inlblk acc-user-name fleft"><strong>My Account</strong></span>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+    <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/Account/Login">
+                    <img border="0" alt="W3Schools" src="~/images/logo.jpg" width="35" height="35">
+                </a>
             </div>
-            <div id="searchbox">
-                <div class="wrapper">
-                    <div class="clr pding10_0"></div>
-                </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/Account/Login">My Account</a></li>
+                    <li><a href="/Posting/FreeAdd">Free Ad</a></li>
+                </ul>
             </div>
-        </header>    <section id="body-container">
-            <div class="wrapper">
-                <div class="content clr rel ">
-                    <div class="stuffed">
-                        <div class="accessgrid br4">
-                            <h2 class="large fbold c62 marginbott10">Reset Your Account Password</h2>
-                            <div class="accessbox bre3 br4 rel">
-                                <div class="inner">
-                                    <form class="default access change-password type3 margintop30 pdingbott30" action="" id="mainForm" method="post">
-                                        <fieldset class="rel">
-                                            <div style="display: none" class="suggest errorbox-container abs zi2 br3">
-                                                <span class="target abs icon"></span>
-                                                <ul class="suggest">
-                                                    <li class="rel margin5_0">
-                                                        <span class="abs icon info3"></span>
-                                                    </li>
-                                                </ul>
-                                                <p style="display: none" class="error "></p>
-                                            </div>
-
-
-                                            <div class="fblock clr">
-                                                <div class="label fleft c000 fbold tright">
-                                                    <label for="userEmail">Email or Phone <em class="cc914">*</em></label>
-                                                </div>
-                                                <div class="area clr">
-                                                    <div class="focusbox fleft rel smallshadow">
-                                                        <div class="clr">
-                                                            <input type="text" value="" class="light bgf4 br3" id="userEmail" name="register[email_phone]">
-                                                            <span class="status icon vmiddle inlblk dnone"></span>
-                                                        </div>
-                                                        <p class="desc errorboxContainer">
-                                                            <small>Enter your email or phone </small>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="fblock">
-                                                <div class="label fleft c000 fbold tright"></div>
-                                                <div class="area clr">
-                                                    <p>
-                                                        <span class="button br3 large big"><input type="submit" class="cfff" value="Submit" id="se_userSignIn"></span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </fieldset>
-                                        <input type="hidden" name="register[rules]" value=1 />
-                                    </form>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        </div>
+    </nav>
+    <div></div><br /><div></div><br /><div></div><br /><div></div><br /><div></div><br />
+   
+    
+    <form>
+        <div class="form-group col-sm-12">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h2>Reset Your Account Password</h2><hr />
             </div>
-        </section>
-
-    </div>
-    <script type="text/javascript" src="https://s2.olx.in/static/olxin/packed/sw46e8349b7014fbe6d1893b42962e37d3.js"></script>
-    <script type="text/javascript" src="https://s1.olx.in/static/olxin/packed/sw512f6d8b6c1941357de4c07a2ed822f4.js"></script>
-
-
+        </div>
+        <div class="form-group col-sm-12">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <label for="inputEmail">Email or Phone<span style="color:red">*</span></label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email or Phone"><span>Enter your email or phone</span>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+        
+        <div class="form-group col-sm-12">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>                
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </form>
 </body>
 </html>
-<!-- wrk-28 -->

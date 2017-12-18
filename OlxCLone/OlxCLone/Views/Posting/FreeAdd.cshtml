@@ -14,6 +14,7 @@
 
     <script src="~/scripts/jquery-3.2.1.min.js"></script>
     <script src="~/scripts/bootstrap.min.js"></script>
+    <script src="~/scripts/bootstrap-imageupload.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style type="text/css">
         .btn-facebook {
@@ -53,7 +54,16 @@
                 color: #fff;
             }
     </style>
-
+    <script type="text/javascript">
+        $('#my-imageupload').imageupload(options);
+        $('#my-imageupload').imageupload({
+            allowedFormats: ['jpg'],
+            maxFileSizeKb: 512
+        });
+        //$('#my-imageupload').imageupload('disable');
+        $('#my-imageupload').imageupload('enable');
+        //$('#my-imageupload').imageupload('reset');
+    </script>
 </head>
 <body>
     <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
@@ -78,11 +88,11 @@
             </div>
         </div>
     </nav>
-    <div></div><br /><div></div><br /><div></div><br /><div></div><br /><div></div><br />
-    <div>
-        <div class="panel">
-            <div class="panel-body">
-                <form>
+    <div></div><br /><div></div><br /><div></div><br /><div></div><br /><div></div><div></div><div></div><div></div><br />
+    <div class="container">
+        <div class="panel-body" >
+            <form>
+                <div class="form-group" style="border:2px solid #e7fbc2;box-shadow: 0px 0px 2px 2px grey; max-width:1000px;max-height:1000px; min-height:1000px" >
                     <div class="form-group col-sm-12">
                         <div class="col-sm-4"></div>
                         <div class="col-sm-4">
@@ -123,7 +133,7 @@
                             <label for="inputName">
                                 Name<span style="color:red">*</span>
                             </label>
-                            <input type="text" class="form-control"><hr/>
+                            <input type="text" class="form-control"><hr />
                         </div>
                         <div class="col-sm-1"></div>
                     </div>
@@ -157,10 +167,61 @@
                         </div>
                         <div class="col-sm-4"></div>
                     </div>
+                    <div class="form-group col-sm-12">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4">
+                            <span>By clicking 'Submit' you agree to our <a href="/Account/UnableToLogin">Terms of Use</a> & <a href="/Account/UnableToLogin">Posting Rules</a></span><br /><hr />
+                        </div>
+                        <div class="col-sm-4"></div>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4">
+                            <div class="col-sm-4"></div>
+                            <div class="col-sm-4">
+                            </div>
+                        </div>
+                        <div class="col-sm-1">
+                            <div class="col-sm-4"></div>
+                            <div class="col-sm-4">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
 
-                </form>
-            </div>
         </div>
+        <div>
+            <div class="imageupload panel panel-default">
+                <div class="panel-heading clearfix">
+                    <h3 class="panel-title pull-left">Upload Image</h3>
+                    <div class="btn-group pull-right">
+                        <button type="button" class="btn btn-default active">File</button>
+                        <button type="button" class="btn btn-default">URL</button>
+                    </div>
+                </div>
+                <div class="file-tab panel-body">
+                    <label class="btn btn-default btn-file">
+                        <span>Browse</span>
+                        <!-- The file is stored here. -->
+                        <input type="file" name="image-file" id="my-imageupload">
+                    </label>
+                    <button type="button" class="btn btn-default">Remove</button>
+                </div>
+                <div class="url-tab panel-body">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Image URL">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default">Submit</button>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-default">Remove</button>
+                    <!-- The URL is stored here. -->
+                    <input type="hidden" name="image-url">
+                </div>
+            </div>
+        </div><br />
     </div>
 </body>
 </html>
