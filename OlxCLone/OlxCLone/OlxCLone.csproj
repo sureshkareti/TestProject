@@ -189,6 +189,8 @@
     <Content Include="Views\Home\Index1.cshtml" />
     <Content Include="Views\Account\Index.cshtml" />
     <Content Include="Views\Account\Register1.cshtml" />
+    <Content Include="Views\Account\UnableToLogin1.cshtml" />
+    <Content Include="Views\Account\Home.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

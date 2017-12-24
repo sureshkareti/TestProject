@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row loginform" style="max-width:970px !important;margin:auto;padding:30px;">
+    <div class="col-md-5">
+        <span style="color:#2B2B2B;font-weight:200;font-size:20px">Your OLX Ads</span><br />
+        <span style="font-size:13px;color:#a5a5a5;font-weight:200;">can manage your Active & Inactive Ads here</span> 
+    </div>
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-3 account-balance">
+        <div style="height:60px;width:100%;border:1px solid #dedede;border-radius:5px;">
+            <span style="font-size:13px;color:#a5a5a5;font-weight:200;padding-left:15px;"> Account balance</span> 
+            <ul>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle" style="font-size:24px;padding-left:15px"> <span class="fa fa-rupee" style="font-size:20px"></span>&nbsp; 0  <b class="caret"></b></a>
+                    <ul class="dropdown-menu" style="padding:0;">
+                        <li><a href="#" style="color:#a5a5a5;">Credits: <span class="fa fa-rupee" ></span> 0</a></li>                       
+                        <li class="divider"></li>
+                        <li><a href="#" style="color:#a5a5a5;">Bonus Credits: 0 pts</a></li>
+                    </ul>
+                </li>
+            </ul>
+         
+         
+        </div>
+    </div>
+</div>
+
+
+
+@section Styles {
+    <link href="@Url.Content("~/Content/custome/account.css")" rel="stylesheet" type="text/css" />
+
+}

@@ -39,6 +39,14 @@ namespace OlxCLone.Controllers
         {
             return View();
         }
+        public ActionResult UnableToLogin1()
+        {
+            return View();
+        }
+        public ActionResult Home()
+        {
+            return View();
+        }
 
     }
 }

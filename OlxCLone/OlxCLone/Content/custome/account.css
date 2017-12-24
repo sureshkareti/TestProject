@@ -11,3 +11,13 @@
     border-left: 1px solid #B29999;
     
 }
+
+.account-balance ul {
+
+    padding:0;
+}
+
+.account-balance ul li{
+    list-style:none;
+      
+}
