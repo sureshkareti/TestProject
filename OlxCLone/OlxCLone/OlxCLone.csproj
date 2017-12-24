@@ -136,6 +136,7 @@
     <Content Include="Global.asax" />
     <Content Include="HtmlPage2.html" />
     <Content Include="HtmlPage3.html" />
+    <Content Include="images\background.png" />
     <Content Include="images\logo.jpg" />
     <Content Include="images\testLogo.png" />
     <Content Include="resources.html" />

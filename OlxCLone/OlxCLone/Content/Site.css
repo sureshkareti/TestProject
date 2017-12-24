@@ -119,4 +119,54 @@ textarea {
             color: #f70;
         }
 
-  
+.category-item {
+    height: 60px;
+    width: 60px;
+    background-color: #f2f7f7;
+    text-align: center;
+    border-radius: 100%;
+    border: 1px solid #f2f7f7;
+    padding-top: 10px;
+    margin: auto;
+    color: #f70;
+
+}
+
+.footer-banner {
+    background: url(../images/background.png) no-repeat;
+    height: 200px;
+    width: 100%;
+    border: 1px solid white;
+    content: "";
+}
+
+.footer-navigation {
+}
+
+    .footer-navigation ul {
+        list-style: none;
+    }
+
+    .footer-navigation li a {
+        color: #414141;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .footer-navigation li span:hover {
+        color: #f70;
+        cursor: pointer;
+    }
+
+    .footer-navigation li a:hover {
+        color: #f70;
+        cursor: pointer;
+    }
+
+.footer-sharelinks ul {
+    list-style: none;
+}
+
+    .footer-sharelinks ul li {
+        display: inline;
+    }
