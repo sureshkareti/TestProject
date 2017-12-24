@@ -4,15 +4,85 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+
+<div class="row" style="padding-top:15px;padding-bottom:15px;  border:1px solid #b0cfda;border-radius:5px;background-color:#b0cfda;">
+
+    <div class="col-md-3 ">
+        <input type="text" class="form-control input-lg " placeholder="All India" />
+    </div>
+    <div class="col-md-7 ">
+        <input type="text" class="form-control input-lg" placeholder="3,12,578 Ads near you" />
+    </div>
+    <div class="col-md-2 ">
+        <input type="button" class="form-control input-lg" value="Search" style="background-color:#2965be;color:white;border:1px solid white" />
+    </div>
+
+
 </div>
 
-<div style="padding:0;margin:0;height:50px;background-color:gray">
-    
+<div class="row">
+    <div class="col-sm-6" id="slider-thumbs">
+        <!-- Bottom switcher of slider -->
+        <ul class="hide-bullets">
+            <li class="col-sm-3 category">
+                <a class="thumbnail" id="carousel-selector-16">
+                    <img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories16.jpg">                  
+                </a>
+                <span>Properties</span>
+                
+            </li>
+            <li class="col-sm-3 category">
+                <a class="thumbnail" id="carousel-selector-1"><img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories01.jpg"></a>
+                <span>Cars</span>
+            </li>
+            <li class="col-sm-3 category">
+                <a class="thumbnail" id="carousel-selector-2"><img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories02.jpg"></a>
+                <span>Electronics & Appliances</span>
+            </li>
+            <li class="col-sm-3 category">
+                <a class="thumbnail" id="carousel-selector-3"><img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories03.jpg"></a>
+                <span>Furnitures</span> 
+            </li>
+            <li class="col-sm-3 category">
+                <a class="thumbnail" id="carousel-selector-4"><img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories04.jpg"></a>
+                <span>Jobs</span>
+            </li>
+            <li class="col-sm-3 category">
+                <a class="thumbnail" id="carousel-selector-5"><img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories05.jpg"></a>
+                <span>Mobiles</span>
+            </li>
+            <li class="col-sm-3 category">
+                <a class="thumbnail" id="carousel-selector-6"><img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories06.jpg"></a>
+                <span>Bikes</span>
+            </li>
+            <li class="col-sm-3 category">
+                <a class="thumbnail" id="carousel-selector-7"><img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories07.jpg"></a>
+            
+                <span>Books, Sports & Hobbies</span></li>
+            <li class="col-sm-3 category">
+                <a class="thumbnail" id="carousel-selector-8"><img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories08.jpg"></a>
+                <span>Fashion</span>
+            </li>
+            <li class="col-sm-3 category">
+                <a class="thumbnail" id="carousel-selector-9"><img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories09.jpg"></a>
+                <span>Pets</span>
+            
+            </li>
+            <li class="col-sm-3 category">
+                <a class="thumbnail" id="carousel-selector-10"><img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories10.jpg"></a>
+                <span>Services</span>
+            </li>
+           
+        </ul>
+    </div>
+    <div class="col-sm-6">
+       
+    </div>
+    <!--/Slider-->
 </div>
+
+
+
 
 @section Styles {
     <link href="@Url.Content("~/Content/custome/home.css")" rel="stylesheet" type="text/css" />

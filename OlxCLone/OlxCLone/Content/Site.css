@@ -2,8 +2,8 @@
     /*padding-top: 5px;
     paddin;g-bottom: 20px;*/
     font-family: "Roboto",Arial,Helvetica,sans-serif;
-   margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -24,15 +24,13 @@ textarea {
     line-height: 98px;
     height: 98px;
     padding: 0px;
-    margin:0;
-   
+    margin: 0;
 }
 
     .navbar-brand img {
         height: 92px;
         width: 92px;
         padding: 0;
-      
     }
 
 .logo-title {
@@ -85,3 +83,40 @@ textarea {
 }
 
 
+.hide-bullets {
+    list-style: none;
+    margin-left: -40px;
+    margin-top: 20px;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.category {
+    border: 1px solid transparent;
+    border-radius: 0;
+    transition: all 3s ease;
+    text-align: center;
+    min-height: 135px;
+}
+
+    .category:hover {
+        cursor: pointer;
+    }
+
+    .category a {
+        margin-bottom: 5px;
+    }
+
+    .category span {
+        text-align: center;
+        color: #2965be;
+    }
+
+        .category span:hover {
+            text-align: center;
+            color: #f70;
+        }
+
+  
