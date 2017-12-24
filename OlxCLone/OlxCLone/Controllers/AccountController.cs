@@ -30,6 +30,15 @@ namespace OlxCLone.Controllers
         {
             return View();
         }
-        
+
+        public ActionResult Index()
+        {
+            return View();
+        }
+        public ActionResult Register1()
+        {
+            return View();
+        }
+
     }
 }

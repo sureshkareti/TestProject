@@ -1,0 +1,13 @@
+﻿
+.loginform a {
+    text-decoration: none;
+}
+
+    .loginform a :hover {
+        color: #f70;
+    }
+
+.form-line {
+    border-left: 1px solid #B29999;
+    
+}
