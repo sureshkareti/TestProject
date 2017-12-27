@@ -87,7 +87,7 @@
 /************************************** Tab4 accordian ******************************/
 /***  ***/
 
-.panel-default > .panel-heading {
+.accordion-header > .panel-heading {
     color: #333;
     background-color: #fff;
     border-color: #e4e5e7;
@@ -98,12 +98,12 @@
     user-select: none;
 }
 
-    .panel-default > .panel-heading a {
+    .accordion-header > .panel-heading a {
         display: block;
         padding: 10px 15px;
     }
 
-        .panel-default > .panel-heading a:after {
+        .accordion-header > .panel-heading a:after {
             content: "";
             position: relative;
             top: 1px;
@@ -119,17 +119,17 @@
             -webkit-transition: -webkit-transform .25s linear;
         }
 
-        .panel-default > .panel-heading a[aria-expanded="true"] {
+        .accordion-header > .panel-heading a[aria-expanded="true"] {
             background-color: #eee;
         }
 
-            .panel-default > .panel-heading a[aria-expanded="true"]:after {
+            .accordion-header > .panel-heading a[aria-expanded="true"]:after {
                 content: "\2212";
                 -webkit-transform: rotate(180deg);
                 transform: rotate(180deg);
             }
 
-        .panel-default > .panel-heading a[aria-expanded="false"]:after {
+        .accordion-header > .panel-heading a[aria-expanded="false"]:after {
             content: "\002b";
             -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
