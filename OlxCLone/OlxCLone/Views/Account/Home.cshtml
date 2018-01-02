@@ -47,64 +47,318 @@
                 <div class="tab-content">
                     <div class="tab-pane fade in active" id="tab1default">
 
-                        Default 1 </div>
-                    <div class="tab-pane fade" id="tab2default">Default 2</div>
-                    <div class="tab-pane fade" id="tab3default">Default 3</div>
+                        <div class="clearfix"></div>
+                        <div class="row">
+                            <div class="col-md-8">Active (1)</div>
+                            <div class="col-md-4">
+
+                                <div id="custom-search-input">
+                                    <div class="input-group col-md-12">
+                                        <input type="text" class="form-control " placeholder="Buscar" />
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-info " type="button">
+                                                <i class="glyphicon glyphicon-search"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row" style="min-height:150px;text-align:center;padding-top:80px">
+                            <p>No Messages are </p>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="tab2default">
+                        <div class="clearfix"></div>
+
+                        <!-- BEGIN Portlet PORTLET-->
+                        <div class="portlet">
+                            <div class="col-md-8">
+                                <div class="portlet-title">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active">
+                                            <a href="#portlet_Inbox" data-toggle="tab" style="background-color:white">
+                                                Inbox
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#portlet_Sent" data-toggle="tab" style="background-color:white">
+                                                Sent
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#portlet_archive" data-toggle="tab" style="background-color:white">
+                                                Archive
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div id="custom-search-input">
+                                    <div class="input-group col-md-12">
+                                        <input type="text" class="form-control " placeholder="Buscar" />
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-info " type="button">
+                                                <i class="glyphicon glyphicon-search"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="portlet-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="portlet_Inbox">
+
+                                        <div class="row" style="min-height:150px;text-align:center;padding-top:80px">
+                                            <p>No Messages.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane" id="portlet_Sent">
+
+                                        <div class="row" style="min-height:150px;text-align:center;padding-top:80px">
+                                            <p>No Messages.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="portlet_archive">
+
+                                        <div class="row" style="min-height:150px;text-align:center;padding-top:80px">
+                                            <p>No Messages.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Portlet PORTLET-->
+                    </div>
+                    <div class="tab-pane fade" id="tab3default" style="background: #f1f3fa;">
+                        <div class="clearfix"></div>
+
+                        <!-- BEGIN Portlet PORTLET-->
+                        <div class="portlet">
+                            <div class="portlet-title">
+                                @*<div class="caption caption-red">
+                                        <i class="glyphicon glyphicon-pushpin"></i>
+                                        <span class="caption-subject bold font-yellow-crusta uppercase">
+                                            Tabs
+                                        </span>
+                                        <span class="caption-helper">more samples...</span>
+                                    </div>*@
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a href="#portlet_History" data-toggle="tab" style="background-color:white">
+                                            History
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#portlet_invoices" data-toggle="tab" style="background-color:white">
+                                            E-invoices
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="portlet-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="portlet_History">
+                                        <div class="row">
+                                            <div class="col-md-8"></div>
+                                            <div class="col-md-4">
+
+                                                <div id="custom-search-input">
+                                                    <div class="input-group col-md-12">
+                                                        <input type="text" class="form-control " placeholder="Buscar" />
+                                                        <span class="input-group-btn">
+                                                            <button class="btn btn-info " type="button">
+                                                                <i class="glyphicon glyphicon-search"></i>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row" style="min-height:150px;text-align:center;padding-top:80px">
+                                            <p>Empty payment history.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane" id="portlet_invoices">
+
+                                        <div class="row" style="min-height:150px;text-align:center;padding-top:80px">
+                                            <p>No e-invoice/receipt available</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Portlet PORTLET-->
+                    </div>
                     <div class="tab-pane fade" id="tab4default">
-                     
-                            <div class="clearfix"></div>
-                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                <div class="panel panel-default accordion-header">
-                                    <div class="panel-heading" role="tab" id="headingOne">
-                                        <h4 class="panel-title">
-                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                Collapsible Group Item #1
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                        <div class="panel-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                                            raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
-                                    </div>
+                        <div class="clearfix"></div>
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default accordion-header">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            Change contact details
+                                        </a>
+                                    </h4>
                                 </div>
-                                <div class="panel panel-default accordion-header">
-                                    <div class="panel-heading" role="tab" id="headingTwo">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                                Collapsible Group Item #2
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
-                                        <div class="panel-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                                            raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <div class="row  form-group">
+                                            <div class="col-md-4">
+                                                <span>State</span>
+                                                <select id="SubjectList" name="SubjectList" class="form-control">
+                                                    <option value="1">Choose</option>
+                                                    <option value="2">City2</option>
+                                                    <option value="3">City3</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default accordion-header">
-                                    <div class="panel-heading" role="tab" id="headingThree">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                                Collapsible Group Item #3
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseThree" class="panel-collapse collapse in " role="tabpanel" aria-labelledby="headingThree">
-                                        <div class="panel-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                                            raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        <div class="row  form-group">
+                                            <div class="col-md-4">
+                                                <span>City</span>
+                                                <select id="SubjectList" name="SubjectList" class="form-control">
+                                                    <option value="1">Choose</option>
+                                                    <option value="2">City2</option>
+                                                    <option value="3">City3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row  form-group">
+                                            <div class="col-md-4">
+                                                <span>Name<span style="color:red">*</span></span>
+                                                <input type="password" class="form-control" name="txtName" required="required" data-error="This field is required." />
+                                            </div>
+                                        </div>
+                                        <div class="row  form-group">
+                                            <div class="col-md-4">
+                                                <input type="button" class="btn btn-primary" value="Change Password" />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                      
+                            <div class="panel panel-default accordion-header">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Change phone
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <div class="row  form-group">
+                                            <div class="col-md-4">
+                                                <span>New Phone Number</span>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">+91</span>
+                                                    <input id="msg" type="text" class="form-control" name="txtMobileNumber">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row  form-group">
+                                            <div class="col-md-4">
+                                                <input type="button" class="btn btn-primary" value="Save" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default accordion-header">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Change password
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        <form id="frmChangePassword">
+                                            <div class="row  form-group">
+                                                <div class="col-md-4">
+                                                    <span>Old Password<span style="color:red">*</span></span>
+                                                    <input type="password" name="txtOldPasscode" class="form-control" required="required" minlength="4" data-error="This field is required." />
+                                                </div>
+                                            </div>
+                                            <div class="row  form-group">
+                                                <div class="col-md-4">
+                                                    <span>New Password<span style="color:red">*</span></span>
+                                                    <input type="password" name="txtPasscode" class="form-control" required="required" minlength="4" data-error="This field is required." />
+                                                </div>
+                                            </div>
+                                            <div class="row  form-group">
+                                                <div class="col-md-4">
+                                                    <span>Repeat new password<span style="color:red">*</span></span>
+                                                    <input type="password" class="form-control" name="txtConfirmPasscode" required="required" data-error="This field is required." />
+                                                </div>
+                                            </div>
+                                            <div class="row  form-group">
+                                                <div class="col-md-4">
+                                                    <input type="button" class="btn btn-primary" value="Change Password" />
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default accordion-header">
+                                <div class="panel-heading" role="tab" id="headingFour">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                            Change email
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                    <div class="panel-body">
+                                        <div class="row  form-group">
+                                            <div class="col-md-4">
+                                                <span>New email</span>
+                                                <input type="text" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="row  form-group">
+                                            <div class="col-md-4">
+                                                <input type="button" class="btn btn-primary" value="Save" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default accordion-header">
+                                <div class="panel-heading" role="tab" id="headingFive">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                            Delete account
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                    <div class="panel-body">
 
+                                        <div class="row">
+                                            <div class="col-md-12" style="text-align:center;">
+                                                <input type="button" class="btn btn-danger" value="delete" />
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -118,7 +372,13 @@
 
 
 
+
 @section Styles {
     <link href="@Url.Content("~/Content/custome/account.css")" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrapValidator.min.css" rel="stylesheet" />
+}
 
+@section Scripts{
+    <script src="~/scripts/bootstrapValidator.min.js"></script>
+    <script src="~/scripts/customescripts/account.js"></script>
 }
