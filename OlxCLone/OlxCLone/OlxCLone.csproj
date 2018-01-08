@@ -194,6 +194,8 @@
     <Content Include="Views\Account\Register1.cshtml" />
     <Content Include="Views\Account\UnableToLogin1.cshtml" />
     <Content Include="Views\Account\Home.cshtml" />
+    <Content Include="Views\Posting\Index.cshtml" />
+    <Content Include="Views\Home\Categories.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Categories";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row wraper">
+
+    <div class="col-md-3" style="background-color:#f8f8f8;padding:0">
+        <ul class="nav nav-pills nav-stacked">
+            
+            <li style="padding-top:20px;"><span style="padding:30px 0px 5px 15px">Main categories</span></li>
+            <li><a href="#">All Ads</a></li>
+            
+        </ul>
+        <hr />
+        <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#">Properties</a></li>
+            <li><a href="#">Cars</a></li>
+            <li><a href="#">Electronics & Appliances</a></li>
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Mobiles</a></li>
+            <li ><a href="#">Bikes</a></li>
+            <li><a href="#">Books, Sports & Hobbies</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Pets</a></li>
+            <li><a href="#">Services</a></li>
+            
+        </ul>
+
+    </div>
+    <div class="col-md-9" style="padding:10px;">
+        <div class="col-md-12" style="background-color:#fbfaae;padding:12px 16px 10px;border-radius:5px">
+            <a href="#">All India</a> (Select your city to see local ads)
+        </div>
+    </div>
+    
+
+</div>
+
+@section Styles{
+<link href="@Url.Content("~/Content/custome/home.css")" rel="stylesheet" type="text/css" /> 
+}
