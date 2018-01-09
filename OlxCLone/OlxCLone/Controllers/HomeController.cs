@@ -19,5 +19,10 @@ namespace OlxCLone.Controllers
             return View();
 
         }
+
+        public ActionResult Categories()
+        {
+            return View();
+        }
     }
 }
