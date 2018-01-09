@@ -198,6 +198,7 @@
     <Content Include="Views\Posting\Index.cshtml" />
     <Content Include="scripts\Json\categories.json" />
     <Content Include="scripts\Json\locations.json" />
+    <Content Include="Views\Home\Categories.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

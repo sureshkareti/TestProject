@@ -7,5 +7,59 @@
     border-radius:5px;
 }
 
+.location-header{
+    font-weight:bold;
+    color:#336dbe;
+    font-size:17px;
+    line-height:20px;
+    text-decoration:none;
+}
+.location-header-caption{
+     font-weight:400;
+     color:#336dbe;
+    font-size:12px;
+    line-height:20px;
+    color:#414141;
+    cursor:pointer;
+}
+
+.category-item-main {
+    height: 80px;
+    width: 80px;
+    background-color: #f2f7f7;
+    text-align: center;
+    border-radius: 100%;
+    border: 1px solid #f2f7f7;
+    padding-top: 10px;
+    margin: auto;
+    color: #f70;
+
+}
+.category-item-main-name{
+    font-size:20px;
+    font-weight:200;
+    color:#2b2b2b;
+}
+.category-item-main-count{
+   
+    font-weight:200;
+    color:#414141;
+}
+
+.category-item-sub {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    
+    padding: 10px;
+    margin: auto;
+    color: #2965be;
+}
+.category-item-sub:hover{
+    cursor:pointer;
+    border-radius: 5%;
+    border: 2px solid #6794d7;
+}
+
 
 /************************categories**********************/
