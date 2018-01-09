@@ -34,50 +34,224 @@
         <div class="col-md-12" style="background-color:#fbfaae;padding:12px 16px 10px;border-radius:5px">
             <a href="#" class="location-header" style="text-decoration:none;"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;All India</a> <span class="location-header-caption">(Select your city to see local ads)</span> 
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12" id="category-properties" style="display:none">
             <div class="row">
-                <div class="col-md-3 col-xs-6 col-sm-6" style="padding-top:25px;height:120px;">
+                <div class="col-md-3 col-xs-6 col-sm-6 category-item-main-parent" >
                     <div class="category-item-main">
                         <i class="fa fa-home" aria-hidden="true" style="font-size:56px;color:#b3b300"></i>
                     </div>
                 </div>
-                <div class="col-md-9 col-xs-6 col-sm-6" style="padding-top:35px;height:120px">
+                <div class="col-md-9 col-xs-6 col-sm-6 category-item-main-name-parent">
                     <div><span class="category-item-main-name">Properties</span></div>
                     <div><span class="category-item-main-count">3,07,708 Ads</span></div>
-                    <div><a href="#" style="text-decoration:none;color:#2965be">View all Ads >></a></div>
+                    <div><a href="#" class="category-item-main-link">View all Ads >></a></div>
                 </div>
             </div>
             <hr />
             <div class="row">
-                <div class="col-md-2 col-xs-6 col-sm-6">
+                <div class="col-md-2 col-xs-6 col-sm-6" >
                     <div class="category-item-sub" >
-                        <i class="fa fa-home" aria-hidden="true" style="font-size:56px;color:#b3b300"></i><br />
-                        <span>For Rent</span>
+                        <span><img src="~/images/icons/hm-sale.png" class="padding-ten"/></span>                     
+                        <p class="color-orange">For Rent</p>
                     </div>
                 </div>
                 <div class="col-md-2 col-xs-6 col-sm-6">
                     <div class="category-item-sub">
-                        <i class="fa fa-home" aria-hidden="true" style="font-size:56px;color:#b3b300"></i><br />
-                        <span>For Sale</span>
+                        <span><img src="~/images/icons/hm-rent.png" class="padding-ten" /></span>
+                        <p class="color-orange">For Sale</p>
                     </div>
                 </div>
-                <div class="col-md-2 col-xs-6 col-sm-6">
-                    <div class="category-item-sub">
-                        <i class="fa fa-home" aria-hidden="true" style="font-size:56px;color:#b3b300"></i><br />
-                        <span>For Rent</span>
-                    </div>
-                </div>
-                <div class="col-md-2 col-xs-6 col-sm-6">
-                    <div class="category-item-sub">
-                        <i class="fa fa-home" aria-hidden="true" style="font-size:56px;color:#b3b300"></i><br />
-                        <span>For Rent</span>
-                    </div>
-                </div>
-                <div class="col-md-4 col-xs-6 col-sm-6">
+                <div class="col-md-8 col-xs-6 col-sm-6">
                   
                 </div>
             
             </div>
+        </div>
+
+        <div class="col-md-12" id="category-cars" style="display:none">
+            <div class="row">
+                <div class="col-md-3 col-xs-6 col-sm-6 category-item-main-parent">
+                    <div class="category-item-main">
+                        <i class="fa fa-car category-item-img" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-md-9 col-xs-6 col-sm-6 category-item-main-name-parent">
+                    <div><span class="category-item-main-name">Cars</span></div>
+                    <div><span class="category-item-main-count">3,07,708 Ads</span></div>
+                    <div><a href="#" class="category-item-main-link">View all Ads >></a></div>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-2 col-xs-6 col-sm-6 category-item-sub-parent">
+                    <div class="category-item-sub">
+                        <span><img src="~/images/icons/cars.png" class="padding-ten" /></span>
+                        <p class="color-orange">Cars</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6 col-sm-6 category-item-sub-parent">
+                    <div class="category-item-sub">
+                        <span><img src="~/images/icons/cars-cmv.png" class="padding-ten" /></span>
+                        <p class="color-orange">Commercial Vehicles</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6 col-sm-6 category-item-sub-parent">
+                    <div class="category-item-sub">
+                        <span><img src="~/images/icons/cars-ov.png" class="padding-ten" /></span>
+                        <p class="color-orange">Other Vehicles</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6 col-sm-6 category-item-sub-parent">
+                    <div class="category-item-sub">
+                        <span><img src="~/images/icons/cars-sp.png" class="padding-ten" /></span>
+                        <p class="color-orange">Spare Parts</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6 col-sm-6">
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-12" id="category-EA" style="display:none">
+            <div class="row">
+                <div class="col-md-3 col-xs-6 col-sm-6 category-item-main-parent">
+                    <div class="category-item-main">
+                        <i class="fa fa-car category-item-img" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-md-9 col-xs-6 col-sm-6 category-item-main-name-parent">
+                    <div><span class="category-item-main-name">Electronics & Appliances</span></div>
+                    <div><span class="category-item-main-count">3,07,708 Ads</span></div>
+                    <div><a href="#" class="category-item-main-link">View all Ads >></a></div>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-2 col-xs-6 col-sm-6 category-item-sub-parent">
+                    <div class="category-item-sub">
+                        <span><img src="~/images/icons/ea-laptop.png" class="padding-ten" /></span>
+                        <p class="color-orange">Computers & Laptops</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6 col-sm-6 category-item-sub-parent">
+                    <div class="category-item-sub">
+                        <span><img src="~/images/icons/ea-tv.png" class="padding-ten" /></span>
+                        <p class="color-orange">TVs, Video - Audio</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 col-sm-6 category-item-sub-parent">
+                    <div class="category-item-sub" >
+                        <span><img src="~/images/icons/ea-hd.png" class="padding-ten" /></span>
+                        <p class="color-orange">Hard Disks, Printers & Monitors</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6 col-sm-6 category-item-sub-parent">
+                    <div class="category-item-sub">
+                        <span><img src="~/images/icons/ea-ac.png" class="padding-ten" /></span>
+                        <p class="color-orange">ACs</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6 col-sm-6 category-item-sub-parent">
+                    <div class="category-item-sub">
+                        <span><img src="~/images/icons/ea-wm.png" class="padding-ten" /></span>
+                        <p class="color-orange">Washing Machines</p>
+                    </div>
+                </div>
+                <div class="col-md-1 col-xs-6 col-sm-6 category-item-sub-parent">
+                    
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-xs-6 col-sm-6 category-item-sub-parent">
+                    <div class="category-item-sub">
+                        <span><img src="~/images/icons/ea-ca.png" class="padding-ten" /></span>
+                        <p class="color-orange">Computer Accessories</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6 col-sm-6 category-item-sub-parent">
+                    <div class="category-item-sub">
+                        <span><img src="~/images/icons/ea-camera.png" class="padding-ten" /></span>
+                        <p class="color-orange">Cameras & Lenses</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6 col-sm-6 category-item-sub-parent">
+                    <div class="category-item-sub">
+                        <span><img src="~/images/icons/ea-kitchen.png" class="padding-ten" /></span>
+                        <p class="color-orange">Kitchen & Other Appliances</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6 col-sm-6 category-item-sub-parent">
+                    <div class="category-item-sub">
+                        <span><img src="~/images/icons/ea-games.png" class="padding-ten" /></span>
+                        <p class="color-orange">Games & Entertainment</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6 col-sm-6 category-item-sub-parent">
+                    <div class="category-item-sub">
+                        <span><img src="~/images/icons/ea-p.png" class="padding-ten" /></span>
+                        <p class="color-orange">Fridges</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6 col-sm-6 category-item-sub-parent">
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12" id="category-EA" style="display:block">
+            <div class="row">
+                <div class="col-md-3 col-xs-6 col-sm-6 category-item-main-parent">
+                    <div class="category-item-main">
+                        <i class="fa fa-bed category-item-img" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-md-9 col-xs-6 col-sm-6 category-item-main-name-parent">
+                    <div><span class="category-item-main-name">Furniture</span></div>
+                    <div><span class="category-item-main-count">3,07,708 Ads</span></div>
+                    <div><a href="#" class="category-item-main-link">View all Ads >></a></div>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-2 col-xs-6 col-sm-6 category-item-sub-parent">
+                    <div class="category-item-sub">
+                        <span><img src="~/images/icons/f-sd.png" class="padding-ten" /></span>
+                        <p class="color-orange">Sofa & Dining</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6 col-sm-6 category-item-sub-parent">
+                    <div class="category-item-sub">
+                        <span><img src="~/images/icons/f-bw.png" class="padding-ten" /></span>
+                        <p class="color-orange">Beds & Wardrobes</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6 col-sm-6 category-item-sub-parent">
+                    <div class="category-item-sub">
+                        <span><img src="~/images/icons/f-hd.png" class="padding-ten" /></span>
+                        <p class="color-orange">Home Decors & Garden</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6 col-sm-6 category-item-sub-parent">
+                    <div class="category-item-sub">
+                        <span><img src="~/images/icons/f-oh.png" class="padding-ten" /></span>
+                        <p class="color-orange">Other Household Items</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6 col-sm-6 category-item-sub-parent">
+                    <div class="category-item-sub">
+                        <span><img src="~/images/icons/f-kf.png" class="padding-ten" /></span>
+                        <p class="color-orange">Kids Furniture</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6 col-sm-6 category-item-sub-parent">
+
+                </div>
+
+            </div>
+          
         </div>
     </div>
     
