@@ -82,6 +82,52 @@
 
        
     </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON('scripts/Json/locations.json', function (data) {
+           
+                for (var x in data) {
+                    var region = data[x];
+                    var haveSubregions = region.subregions;
+                    console.log(region.name);
+                    //console.log(haveSubregions);
+                    for (var y in haveSubregions) {
+                        console.log(haveSubregions[y].name);
+                    }
+
+                }
+
+                //$.each(data, function (index, value) {
+                //    console.log(value);
+                //    if ($.isArray(value)) {
+                //        $.each(value, function (index1, value1) {
+                //            console.log(value1);
+                //        })
+                //    }
+                //});
+
+                //$.each(data, function (index, value) {
+                //    console.log(value);
+                //    //if ($.isArray(value)) {
+                //    //    $.each(value, function (subIndex, subValue) {
+                //    //        console.log(subValue);
+                //    //        if ($.isArray(subValue)) {
+                //    //            $.each(subValue, function (secondLevelIndex, secondLevelValue) {
+                //    //                console.log(secondLevelValue.cars);
+                //    //                console.log(secondLevelValue);
+                //    //            });
+                //    //        }
+                            
+                //    //    });
+                       
+                //    //}
+                //});
+                
+            });
+        });
+
+
+    </script>
 </head>
 <body>
 

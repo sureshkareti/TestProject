@@ -138,7 +138,6 @@
     <Content Include="Global.asax" />
     <Content Include="HtmlPage2.html" />
     <Content Include="HtmlPage3.html" />
-    <Content Include="HtmlPage5.html" />
     <Content Include="images\background.png" />
     <Content Include="images\logo.jpg" />
     <Content Include="images\testLogo.png" />
@@ -164,6 +163,7 @@
     <Content Include="scripts\jquery-3.2.1.min.js" />
     <Content Include="scripts\jquery-3.2.1.slim.js" />
     <Content Include="scripts\jquery-3.2.1.slim.min.js" />
+    <Content Include="scripts\Json\Test.js" />
     <Content Include="TestLogin.html" />
     <Content Include="Web.config" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -196,6 +196,8 @@
     <Content Include="Views\Account\UnableToLogin1.cshtml" />
     <Content Include="Views\Account\Home.cshtml" />
     <Content Include="Views\Posting\Index.cshtml" />
+    <Content Include="scripts\Json\categories.json" />
+    <Content Include="scripts\Json\locations.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
