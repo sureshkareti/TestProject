@@ -12,34 +12,17 @@ namespace OlxCLone.Controllers
         public ActionResult Login()
         {
             return View();
+        }    
+            
+        public ActionResult Index()
+        {
+            return View();
         }
-
         public ActionResult Register()
         {
             return View();
         }
         public ActionResult UnableToLogin()
-        {
-            return View();
-        }
-        public ActionResult Test()
-        {
-            return View();
-        }
-        public ActionResult Design()
-        {
-            return View();
-        }
-
-        public ActionResult Index()
-        {
-            return View();
-        }
-        public ActionResult Register1()
-        {
-            return View();
-        }
-        public ActionResult UnableToLogin1()
         {
             return View();
         }

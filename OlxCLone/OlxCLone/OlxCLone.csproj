@@ -132,8 +132,9 @@
     <Content Include="Content\custome\sw6637089ba18177292250e396ff324034.css" />
     <Content Include="Content\custome\sw855e31d1e1b381c686e47e953699523f.css" />
     <Content Include="Content\font-awesome.css" />
-    <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="fonts\fontawesome-webfont3e6e.html" />
+    <Content Include="fonts\fontawesome-webfont3e6e.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="HtmlPage2.html" />
@@ -173,6 +174,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="fonts\fontawesome-webfont3e6e.eot" />
+    <Content Include="fonts\fontawesome-webfont3e6e.ttf" />
+    <Content Include="fonts\fontawesome-webfont3e6e.woff" />
+    <Content Include="fonts\fontawesome-webfontd41d.eot" />
     <None Include="scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="scripts\bootstrap-imageupload.js" />
     <Content Include="scripts\bootstrap-imageupload.min.js" />
@@ -185,9 +190,7 @@
     <Content Include="scripts\jquery-3.2.1.slim.js" />
     <Content Include="scripts\jquery-3.2.1.slim.min.js" />
     <Content Include="scripts\Json\Test.js" />
-    <Content Include="TestLogin.html" />
     <Content Include="Web.config" />
-    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -206,15 +209,10 @@
     <Content Include="scripts\jquery-3.2.1.min.map" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Posting\FreeAdd.cshtml" />
-    <Content Include="Views\Account\UnableToLogin.cshtml" />
-    <Content Include="Views\Account\Test.cshtml" />
-    <Content Include="Views\Account\Design.cshtml" />
-    <Content Include="Views\Home\Index1.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\Index.cshtml" />
-    <Content Include="Views\Account\Register1.cshtml" />
-    <Content Include="Views\Account\UnableToLogin1.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\UnableToLogin.cshtml" />
     <Content Include="Views\Account\Home.cshtml" />
     <Content Include="Views\Posting\Index.cshtml" />
     <Content Include="scripts\Json\categories.json" />

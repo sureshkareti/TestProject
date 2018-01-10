@@ -1,254 +1,137 @@
 ﻿
 @{
-    Layout = null;
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>New account</title>
-    <meta name="robots" content="noindex, follow" />
-    
-    <meta http-equiv="Content-Language" content="en" />
-    <meta name="description" content="" />
-    <meta property="og:title" content="New account" />
-    <link rel="icon" type="image/x-icon" href="~/images/logo.jpg">
-    <link rel="stylesheet" type="text/css" href="~/Content/custome/sw855e31d1e1b381c686e47e953699523f.css">
-    @*<link rel="stylesheet" type="text/css" href="https://s2.olx.in/static/olxin/packed/sw855e31d1e1b381c686e47e953699523f.css">*@
-   
-</head>
-<body class="accountview">
 
-    <div id="innerLayout">
+<div class="row loginform" style="max-width:970px !important;margin:auto;">
+    <div class="col-md-1">
 
-        <header id="header-container">
-            <div class="navi">
-                <div class="wrapper clr rel bigwrapper">
-                    <a href="/Account/Login">
-                        <img border="0" alt="W3Schools" src="~/images/logo.jpg" width="100" height="100">
-                    </a>
+    </div>
+    <div class="col-md-10" style="padding-top:30px">
+        <p>Register</p>
+        <div style="border:1px solid #ddd9d9;padding:20px 20px 0 20px;border-radius:5px;">
 
-                    <a id="postNewAdLink" class="postnewlink fbold tdnone" href="/Posting/FreeAdd">
-                        <span>Submit a Free Ad</span>
-                    </a>
-                    <div class="lang-selector small">
-                        <span class="marginright5">Select language</span>
-                        <ul class="breaklist inlblk">
-                            <li class="inlblk">
-                                <span class="x-normal">English</span>
-                            </li>
-                            <li class="inlblk">
-                                <a class="x-normal" id="changeLang" href="https://www.olx.in/changelang/?lang=hi" data-baselink="https://www.olx.in/changelang/?lang=hi">हिंदी</a>
-                            </li>
-                        </ul>
+            <div class="row form-group">
+
+                <div class="col-md-7">
+                    <div class="row form-group">
+                        <div class="col-md-3 text-left">
+                            Phone<span style="color:red">*</span>
+
+                        </div>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" />
+                            <p class="help-block">Enter your phone no </p>
+                        </div>
+                       
                     </div>
-                    <span class="slogan">India's Largest Marketplace</span>
-                    
-                    <ul class="userbox fright marginleft10">
-                        <li class="hidden inlblk nowrap rel vtop" id="observed-counter">
-                            <a href="https://www.olx.in/observed/" class="tdnone inlblk hidden" id="observed-ads-link" title="Favorites">
-                                <span class="icon inlblk favin vtop"></span>
-                                <strong class="counter"></strong>
-                            </a>
-                            <a href="https://www.olx.in/observed/search/" class="tdnone inlblk hasObservedAds?'hidden':''}" id="observed-search-link" title="Favorites">
-                                <span class="icon inlblk favin vtop"></span>
-                                <strong class="counter"></strong>
-                            </a>
-                        </li>
-                        <li class="inlblk nowrap vtop noslash" id="my-account-link">
-                            <div class="inlblk rel">
-                                <a href="/Account/Login"
-                                   class="tdnone" id="topLoginLink">
-                                    <span class="icon inlblk accountshape vtop fleft"></span>
-                                    <span class="link inlblk acc-user-name fleft"><strong>My Account</strong></span>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="row form-group">
+                        <div class="col-md-3 text-left">
+                           Password<span style="color:red">*</span>
+
+                        </div>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" />
+                            <p class="help-block">Enter your password  </p>
+                        </div>
+                        
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-3 text-left">
+                            Name<span style="color:red">*</span>
+
+                        </div>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" />
+                            <p class="help-block">Enter Name</p>
+                        </div>
+
+                    </div>
+                  
                 </div>
-            </div>
-            <div id="searchbox">
-                <div class="wrapper">
-                    <div class="clr pding10_0"></div>
-                </div>
-            </div>
-        </header>
-            <section id="body-container">
-            <div class="wrapper">
-                <div class="content clr rel">
-                    <div class="stuffed">
-                        <h2 class="large fbold c62 marginbott10">Register</h2>
-                        <div class="halfgrid bre3 br4 access accessbox">
-                            <form class="default access type2" action="" id="mainForm" method="post">
-                                <fieldset>
-                                    <legend></legend>
-                                    <div class="clr">
-                                        <div class="fleft half">
-                                            <div class="inner">
-
-                                                <div class="fblock clr" id="emailDiv">
-                                                    <div class="label fleft c000 fbold tright">
-                                                        <label for="userEmail">Phone<em class="cc914">*</em></label>
-                                                    </div>
-                                                    <div class="area clr">
-                                                        <div class="fleft rel focusbox smallshadow">
-                                                            <input type="text" maxlength="10" value="" class="light br3 hide-dropdown" id="userEmail" name="register[phone]">
-                                                            <span class="status icon vmiddle inlblk dnone"></span>
-                                                            <p class="desc errorboxContainer">
-                                                                <small>Enter your phone no</small>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="fblock clr" id="pass1Div">
-                                                    <div class="label fleft c000 fbold tright">
-                                                        <label for="userPass">Password<em class="cc914">*</em></label>
-                                                    </div>
-                                                    <div class="area clr">
-                                                        <div class="fleft rel focusbox smallshadow">
-                                                            <input type="password" autocomplete="off" value="" class="light br3" id="userPass" name="register[password]">
-                                                            <span class="status icon vmiddle inlblk dnone"></span>
-                                                            <p class="desc errorboxContainer">
-                                                                <small> Enter your password</small>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="fblock clr" id="user-name">
-                                                    <div class="label fleft c000 fbold tright">
-                                                        <label for="userPass-repeat">Name<em class="cc914">*</em> </label>
-                                                    </div>
-                                                    <div class="area clr">
-                                                        <div class="fleft rel focusbox smallshadow">
-                                                            <input type="text" value="" class="light br3" id="userPass-repeat" name="register[person]">
-                                                            <span class="status icon vmiddle inlblk dnone"></span>
-                                                            <p class="desc errorboxContainer">
-                                                                <small id="se_userPass-repeatErr">Enter Name</small>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="fleft half">
-                                            <div class="inner bre3 brtop0 brbottom0 brright0">
-                                                <p>By registering, you get access to <strong>My Account</strong> where you can:</p>
-                                                <ul class="c62 points">
-                                                    <li>
-                                                        <span class="icon inlblk point vmiddle"><span></span></span>Manage your Ads (Edit, Delete, Upgrade)
-                                                    </li>
-                                                    <li>
-                                                        <span class="icon inlblk point vmiddle"><span></span></span>Check responses to your Ads
-                                                    </li>
-                                                    <li>
-                                                        <span class="icon inlblk point vmiddle"><span></span></span>Track payments
-                                                    </li>
-                                                    <li>
-                                                        <span class="icon inlblk point vmiddle"><span></span></span>Manage your settings
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="inner">
-                                        <div class="fblock margintop20 clr">
-                                            <div class="label fleft c000 fbold tright"></div>
-                                            <div class="area">
-                                                <div class="rel focusbox smallshadow">
-                                                    <p>
-                                                        <input type="checkbox" id="acceptCheck" name="register[rules]" checked= checked><strong class="cc914">*</strong>
-                                                        <label for="acceptCheck" class="thin">
-                                                            By registering on OLX, you accept our <a href="https://www.olx.in/terms/" title="Terms of Use" target="_blank">Terms of Use</a>.
-                                                        </label>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="fblock">
-                                            <div class="label fleft c000 fbold tright"></div>
-                                            <div class="area clr margintop15">
-                                                <p>
-                                                    <span class="button big br3 large"><input type="submit" class="cfff" value="Register" id="se_userSignIn"></span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                            </form>
+                <div class="col-md-5 form-line">
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <p>By registering, you get access to <strong>My Account:</strong> where you can </p>
+                           
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <span class="glyphicon glyphicon-arrow-right"></span> Manage your Ads (Edit, Delete, Upgrade)
+                        </div>
+                        <div class="col-md-12">
+                            <span class="glyphicon glyphicon-arrow-right"></span> Check responses to your Ads
+                        </div>
+                        <div class="col-md-12">
+                            <span class="glyphicon glyphicon-arrow-right"></span> Track payments
+                        </div>
+                        <div class="col-md-12">
+                            <span class="glyphicon glyphicon-arrow-right"></span> Manage your settings
                         </div>
                     </div>
                 </div>
+
+               
             </div>
-        </section>
-     
-        <div id="message_system" style="display: none">
-            <div class="inner">
-                <div class="tleft x-normal lheight20 rel messagesystem ">
-                    <p>
-                        <span class="fleft icon status">&nbsp;</span>
-                        <span class="msg block overh"></span>
-                    </p>
+            <div class="row form-group">
+
+                <div class="col-md-12">
+                  
+                    <div class="row form-group">
+                        <div class="col-md-2 text-right">
+
+                        </div>
+                        <div class="col-md-10" style="padding-right:0;padding-left:0">
+                            <input id="checkbox1" type="checkbox">
+                            <label for="checkbox1" style="font-weight:normal">
+                                <span style="color:red">*</span>By registering on OLX, you accept our <a href="#"> Terms of Use</a>
+                            </label>
+                        </div>
+
+                    </div>
                 </div>
+                @*<div class="col-md-4">
+                    
+                </div>*@
+
+
             </div>
-        </div>
-        <div id="dialogMessage" class="hidden">
-            <div class="inner"></div>
-        </div>
-        <div id="saveFavDiv" class="hidden">
-            <div class="inner tcenter">
-                <div class="large lheight18">
-                    <p class="marginbott15 margintop10 typeSearch hidden">
-                        <strong>Search was added to favorites</strong>
-                    </p>
-                    <p class="marginbott15 margintop10 typeOffer hidden">
-                        <strong>The Ad has been added to your favorites</strong>
-                    </p>
-                    <p class="margin5_0">Log in to save it in your My OLX account</p>
-                    <p class="margintop25 marginbott25">
-                        <a class="button big3 br3 circleshadow" href="https://www.olx.in/account/?origin=observepopup">
-                            <span class="cfff large">Log in</span>
-                        </a>
-                    </p>
-                    <p class="margin5_0">
-                        Or <a href="https://www.olx.in/account/register/" class="link">
-                            <span>Create an account to save your favorites</span>
-                        </a>
-                    </p>
+            <div class="row form-group">
+                <div class="col-md-7">
+
+                    <div class="row form-group">
+                        <div class="col-md-3 text-right">
+
+                        </div>
+                        <div class="col-md-9" style="padding-right:0">
+                            <input type="button" class="btn btn-primary" value="Log in" style="width:100px" />
+                        </div>
+
+                    </div>
                 </div>
+                <div class="col-md-4">
+
+                </div>
+
+
             </div>
-            <div class="tcenter brtop-1 clr pding10">
-                <p class="margin20_0 large lheight18">
-                    <a href="#" class="link" onclick="$.fancybox.close(); return false;">
-                        <span>No, thanks</span>
-                    </a>
-                </p>
-            </div>
+           
+
         </div>
-        <div id="synchroFavDiv" class="hidden">
-            <div class="inner"></div>
-            <div class="tcenter brtop-1 clr pding10">
-                <p class="margin10_0">
-                    <a class="button big br3" href="#" id="synchronizeObservedConfirm">
-                        <span class="cfff large">Save in favorites</span>
-                    </a>
-                </p>
-                <p class="margin5_0">
-                    <a href="#" class="link" id="synchronizeObservedCancel">
-                        <span>No, thanks</span>
-                    </a>
-                </p>
-            </div>
-        </div>
+        
 
     </div>
-    
+    <div class="col-md-1">
 
-    <script type="text/javascript" src="https://s2.olx.in/static/olxin/packed/sw46e8349b7014fbe6d1893b42962e37d3.js"></script>
-    <script type="text/javascript" src="https://s2.olx.in/static/olxin/packed/sw6d7bdf006062b9e94f7f2bda735c2a87.js"></script>
+    </div>
+</div>
 
-</body>
-</html>
 
+
+@section Styles {
+    <link href="@Url.Content("~/Content/custome/account.css")" rel="stylesheet" type="text/css" />
+
+}

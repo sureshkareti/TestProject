@@ -87,3 +87,6 @@
 
 
 /************************categories**********************/
+.no-underline{
+    text-decoration:none !important;
+}

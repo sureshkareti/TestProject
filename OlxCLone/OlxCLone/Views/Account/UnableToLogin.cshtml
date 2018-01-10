@@ -1,76 +1,52 @@
 ﻿
 @{
-    Layout = null;
+    ViewBag.Title = "UnableToLogin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<div class="row loginform" style="max-width:970px !important;margin:auto;padding-bottom:120px;">
+    <div class="col-md-2">
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login Page </title>
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    </div>
+    <div class="col-md-8" style="padding-top:30px">
+        <p>Reset Your Account Password</p>
+        <div style="border:1px solid #ddd9d9;padding:20px 20px 0 20px;border-radius:5px;">
 
-    <script src="~/scripts/jquery-3.2.1.min.js"></script>
-    <script src="~/scripts/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-</head>
-<body>
-    <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/Account/Login">
-                    <img border="0" alt="W3Schools" src="~/images/logo.jpg" width="35" height="35">
-                </a>
+            <div class="row form-group">
+
+                <div class="col-md-3">
+                    Email or Phone<span style="color:red">*</span>
+
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" />
+                    <p class="help-block">Enter your email or phone</p>
+                </div>
+                <div class="col-md-3">
+
+                </div>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="/Account/Login">My Account</a></li>
-                    <li><a href="/Posting/FreeAdd">Free Ad</a></li>
-                </ul>
+            <div class="row form-group">
+                <div class="col-md-3">
+                   
+                </div>
+                <div class="col-md-6">
+                    <input type="button" class="btn btn-primary" value="Log in" style="width:100px" />
+                </div>
+                <div class="col-md-3">
+
+                </div>
             </div>
-        </div>
-    </nav>
-    <div></div><br /><div></div><br /><div></div><br /><div></div><br /><div></div><br />
-   
-    
-    <form>
-        <div class="form-group col-sm-12">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4">
-                <h2>Reset Your Account Password</h2><hr />
-            </div>
-        </div>
-        <div class="form-group col-sm-12">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4">
-                <label for="inputEmail">Email or Phone<span style="color:red">*</span></label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email or Phone"><span>Enter your email or phone</span>
-            </div>
-            <div class="col-sm-4"></div>
-        </div>
-        
-        <div class="form-group col-sm-12">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4">
-                <div class="col-sm-4"></div>
-                <div class="col-sm-4">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>                
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-    </form>
-</body>
-</html>
+      </div>
+      
+    </div>
+    <div class="col-md-2">
+
+    </div>
+</div>
+
+
+@section Styles {
+    <link href="@Url.Content("~/Content/custome/account.css")" rel="stylesheet" type="text/css" />
+
+}
